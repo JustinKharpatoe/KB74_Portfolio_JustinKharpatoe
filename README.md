@@ -2,11 +2,11 @@
 De portfolio van Justin Kharpatoe voor de minor KB74 (Applied Data Science)
 
 ## Strucuur
-1 [DataCamp](#DataCamp)
-2 [Coursera](#Coursera)
-3 [Presentaties](#Presentaties)
-4 [Uitgevoerde taken voor het project](#Taken_project)
-5 [Opdrachten van de workshops](#Opdrachten_workshops)
+1. [DataCamp](#DataCamp)
+2. [Coursera](#Coursera)
+3. [Presentaties](#Presentaties)
+4. [Uitgevoerde taken voor het project](#Taken_project)
+5. [Opdrachten van de workshops](#Opdrachten_workshops)
 	5.1 [Bullshit in Data Science](#Bullshit)
 	5.2 [Visualisatie](#Visualisatie)
   
