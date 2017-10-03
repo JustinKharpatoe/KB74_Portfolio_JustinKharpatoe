@@ -2,30 +2,30 @@
 De portfolio van Justin Kharpatoe voor de minor KB74 (Applied Data Science)
 
 ## Strucuur
-1. DataCamp
-2. Coursera
-3. Presentaties
-4. Uitgevoerde taken voor het project
-5. Opdrachten van de workshops
-   5.1 Bullshit in Data Science
-   5.2 Visualisatie
+1. [DataCamp](#DataCamp)
+2. [Coursera](#Coursera)
+3. [Presentaties](#Presentaties)
+4. [Uitgevoerde taken voor het project](#Taken project)
+5. [Opdrachten van de workshops](#Opdrachten workshops)
+    5.1 [Bullshit in Data Science](#Bullshit)
+    5.2 [Visualisatie](#Visualisatie)
   
   
-## 1 DataCamp
+## 1 DataCamp <a name="DataCamp"></a>
 In de map [DataCamp](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/DataCamp) staat bewijs voor de voltooide courses en een aantal voorbeeld scripts van die doorlopen courses
 
 
-## 2 Coursera
+## 2 Coursera <a name="Coursera"></a>
 blabla
 
 
-## 3 Presentaties
+## 3 Presentaties <a name="Presentaties"></a>
 Presentaties waar ik bij betrokken was:
 * [Week 1 (01-09)](https://docs.google.com/presentation/d/19Iks0ZiQG2BRc_Mlws4JroSeeY66rIe7clJoQG2OQgQ/edit?usp=sharing)
 * [Week 5 (29-09)](https://docs.google.com/presentation/d/10pyjl8uo7GWYVokAic3fClKWJ0HHvUdUFRVBI4AedE8/edit?usp=sharing)
 
 
-## 4 Uitgevoerde taken voor het project
+## 4 Uitgevoerde taken voor het project <a name="Taken project"></a>
 De taken zijn op chronologische volgorde weergegeven
 
 [Samenvatting van eerdere (studenten) onderoeken](https://docs.google.com/document/d/1B2aVJnIshw9VviJsPL9ZuDHiEiKkeah67Yfn-D8v9U0/edit?usp=sharing):
@@ -49,11 +49,11 @@ Onderzoeksrapport:
 * [x] SAW (GeNIe Smile)
 
 
-## 5 Opdrachten van de workshops
+## 5 Opdrachten van de workshops <a name="Opdrachten workshops"></a>
 blabla
 
-### 5.1 Bullshit in Data Science
+### 5.1 Bullshit in Data Science <a name="Bullshit"></a>
 blabla
 
-### 5.2 Visualisatie
+### 5.2 Visualisatie <a name="Visualisatie"></a>
 blabla
