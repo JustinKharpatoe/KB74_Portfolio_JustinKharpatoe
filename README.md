@@ -7,8 +7,8 @@ De portfolio van Justin Kharpatoe voor de minor KB74 (Applied Data Science)
 3. Presentaties
 4. Uitgevoerde taken voor het project
 5. Opdrachten van de workshops
-  5.1 Bullshit in Data Science
-  5.2 Visualisatie
+   5.1 Bullshit in Data Science
+   5.2 Visualisatie
   
   
 ## 1 DataCamp
@@ -32,13 +32,16 @@ De taken zijn op chronologische volgorde weergegeven
 * [x] Foutdetectie van sensoren in het klimaatregelsysteem
 * [x] Onderzoeksrapport visualisatie
 
+
 Onderzoeksrapport:
 * [x] [Aanleiding](https://docs.google.com/document/d/1A0goLR-UwdK0Yzf0kNSPONY4m_gPkySrOc6TvJWvYp8/edit?usp=sharing)
 * [x] [Probleemstelling](https://docs.google.com/document/d/1GNvwjAXR1yeKmBYHNozXt-6YAk9hqL0YTXbfDKZ2xWo/edit?usp=sharing)
 
+
 [Stakeholders analyse](https://docs.google.com/document/d/1_ye6ioAlbb7o5IaEB9R8WoXjYITNqxEaVof3VodFhtA/edit?usp=sharing):
 * [x] Inleiding
 * [x] Arie Taal
+
 
 [Onderzoeken van visualisatie tools](https://docs.google.com/document/d/1AB1OfIc8YVoMMScqCCOqiVHgcgTqMviEvohnUiASTH4/edit?usp=sharing):
 * [x] Building EQ
