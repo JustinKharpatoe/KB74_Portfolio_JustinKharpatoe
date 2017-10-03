@@ -5,10 +5,10 @@ De portfolio van Justin Kharpatoe voor de minor KB74 (Applied Data Science)
 1. [DataCamp](#DataCamp)
 2. [Coursera](#Coursera)
 3. [Presentaties](#Presentaties)
-4. [Uitgevoerde taken voor het project](#Taken_project)
-5. [Opdrachten van de workshops](#Opdrachten_workshops)
-	5.1 [Bullshit in Data Science](#Bullshit)
-	5.2 [Visualisatie](#Visualisatie)
+4. [Uitgevoerde taken voor het project](#Taken project)
+5. [Opdrachten van de workshops](#Opdrachten workshops)
+    5.1 [Bullshit in Data Science](#Bullshit)
+    5.2 [Visualisatie](#Visualisatie)
   
   
 ## 1 DataCamp <a name="DataCamp"></a>
@@ -25,7 +25,7 @@ Presentaties waar ik bij betrokken was:
 * [Week 5 (29-09)](https://docs.google.com/presentation/d/10pyjl8uo7GWYVokAic3fClKWJ0HHvUdUFRVBI4AedE8/edit?usp=sharing)
 
 
-## 4 Uitgevoerde taken voor het project <a name="Taken_project"></a>
+## 4 Uitgevoerde taken voor het project <a name="Taken project"></a>
 De taken zijn op chronologische volgorde weergegeven
 
 [Samenvatting van eerdere (studenten) onderoeken](https://docs.google.com/document/d/1B2aVJnIshw9VviJsPL9ZuDHiEiKkeah67Yfn-D8v9U0/edit?usp=sharing):
@@ -49,7 +49,7 @@ Onderzoeksrapport:
 * [x] SAW (GeNIe Smile)
 
 
-## 5 Opdrachten van de workshops <a name="Opdrachten_workshops"></a>
+## 5 Opdrachten van de workshops <a name="Opdrachten workshops"></a>
 blabla
 
 ### 5.1 Bullshit in Data Science <a name="Bullshit"></a>
