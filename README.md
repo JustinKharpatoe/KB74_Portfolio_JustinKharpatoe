@@ -16,7 +16,7 @@ In de map [DataCamp](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKha
 
 
 ## 2 Coursera <a name="Coursera"></a>
-blabla
+In de map [Coursera](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Coursera) staat bewijs voor de voltooide Coursera courses d.m.v screenshots
 
 
 ## 3 Presentaties <a name="Presentaties"></a>
