@@ -32,7 +32,7 @@ Presentaties waar ik bij betrokken was:
 ## 4 Uitgevoerde taken voor het project <a name="Taken_project"></a>
 De taken zijn op chronologische volgorde weergegeven  
 
-[Samenvatting van eerdere (studenten) onderoeken](https://docs.google.com/document/d/1B2aVJnIshw9VviJsPL9ZuDHiEiKkeah67Yfn-D8v9U0/edit?usp=sharing):
+[Samenvatting van eerdere (studenten) onderzoeken](https://docs.google.com/document/d/1B2aVJnIshw9VviJsPL9ZuDHiEiKkeah67Yfn-D8v9U0/edit?usp=sharing):
 * [x] Foutdetectie van sensoren in het klimaatregelsysteem
 * [x] Onderzoeksrapport visualisatie  
 
@@ -55,10 +55,10 @@ Onderzoeksrapport:
 ---
   
 ## 5 Opdrachten van de workshops <a name="Opdrachten_workshops"></a>
-//  
+n.n.b  
 
 ### 5.1 Bullshit in Data Science <a name="Bullshit"></a>
-//  
+n.n.b   
 
 ### 5.2 Visualisatie <a name="Visualisatie"></a>
-//  
+n.n.b    
