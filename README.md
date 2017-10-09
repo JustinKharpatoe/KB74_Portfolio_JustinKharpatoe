@@ -20,6 +20,8 @@ In de map [DataCamp](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKha
 ## 2 Coursera <a name="Coursera"></a>
 In de map [Coursera](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Coursera) staat bewijs voor de voltooide Coursera courses d.m.v screenshots
   
+In de map [Programmeren](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Coursera/Programmeren) staat bewijs voor de voltooide programmeer opdrachten d.m.v. screenshots en code    
+  
 ---
   
 ## 3 Presentaties <a name="Presentaties"></a>
