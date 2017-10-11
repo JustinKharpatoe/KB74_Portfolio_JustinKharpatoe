@@ -53,7 +53,11 @@ Onderzoeksrapport:
 * [x] Building EQ
 * [x] SAW (Expert)
 * [x] SAW (GeNIe Smile)    
-  
+    
+	
+Bayesian Belief Network testen
+* [] [Ruwe data aanpassen volgens regels (rule values)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule.py)    
+    
 ---
   
 ## 5 Opdrachten van de workshops <a name="Opdrachten_workshops"></a>
