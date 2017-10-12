@@ -1,34 +1,42 @@
 # -*- coding: utf-8 -*-
 """
 RAW .csv file to Rule .csv file
-
 """
+
 import time
 import pandas as pd
 
 start_time = time.time()
-print("Rules aanmaken...")
+
+print("Rules en variabelen aanmaken...")
+# Normale temperatuur gaat van 19 t/m 23 graden
 TempRule = {"Normaal": [19, 23]}
+# PIR sensor is gitriggerd bij een waarde van 0.5 of 1
 PIRRule = {"Constant": [0.5, 1]}
+# Normaal CO2 niveau ligt tussen de 0 en 999, hoog niveau tussen 1000 en 1999 en het is extreem vanaf 2000 en meer
 CO2Rule = {"Normaal": [0, 999], "Hoog": [1000, 1999], "Extreem": [2000], "Constant": 3}
+# Comfortabele luchtstroom gaat van 0 t/m 0.15
 AirRule = {"GoedeErvaring": [0, 0.15]}
 #OccRule = {"NietAanwezig": 0, "Aanwezig": 1}
-
-Readfile = "D:\HHS TI\Jaar 4\Minor Data Science\Data\Test4_RuleValues\d2008apr-jun2015 - kopie (3).csv"
-Writefile = Readfile[:-4] + "_RULE" + Readfile[-4:]
-
-RAWbestand = pd.read_csv(Readfile, sep=";", index_col=0)
-
-for i in range(0, len(RAWbestand)):
-    RAWbestand.iloc[i, 0] = RAWbestand.iloc[i, 0].replace(",", ".")
-    RAWbestand.iloc[i, 3] = RAWbestand.iloc[i, 3].replace(",", ".")
-    
-RAWbestand["Temperature"] = pd.to_numeric(RAWbestand["Temperature"], errors="coerce")
-RAWbestand["Air flow"] = pd.to_numeric(RAWbestand["Air flow"], errors="coerce")
-
 #vorigePIRwaarde = 0
 temperatuurWaarden = []
 CO2Waarden = []
+
+# Naam van het bestand dat ingelezen en later opgeslagen moet worden
+Readfile = "D:\HHS TI\Jaar 4\Minor Data Science\Data\Test4_RuleValues\d2008apr-jun2015 - kopie (3).csv"
+Writefile = Readfile[:-4] + "_RULE" + Readfile[-4:]
+
+# Lees het bestand in, met als seperator ; en de datum kolom als index
+RAWbestand = pd.read_csv(Readfile, sep=";", index_col=0)
+
+# Vervang de komma door een punt in twee kolommen
+for i in range(0, len(RAWbestand)):
+    RAWbestand.iloc[i, 0] = RAWbestand.iloc[i, 0].replace(",", ".")
+    RAWbestand.iloc[i, 3] = RAWbestand.iloc[i, 3].replace(",", ".")
+
+# Converteer de twee kolommen naar floats (met komma getallen wordt het een int)    
+RAWbestand["Temperature"] = pd.to_numeric(RAWbestand["Temperature"], errors="coerce")
+RAWbestand["Air flow"] = pd.to_numeric(RAWbestand["Air flow"], errors="coerce")
 
 print("Bezig met data bewerken...")    
 for column in range(0, len(RAWbestand.columns)):
@@ -82,4 +90,4 @@ print("\nLaatste 3 regels:")
 print(RAWbestand.tail(3))
 RAWbestand.to_csv(Writefile)
 
-print("\n====== Execution time: %s ======" % (time.time() - start_time))
+print("\n\t\t\t====== Execution time: %s ======" % (time.time() - start_time))
