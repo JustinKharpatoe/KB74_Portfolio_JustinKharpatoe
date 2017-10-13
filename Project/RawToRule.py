@@ -5,6 +5,8 @@ RAW .csv file to Rule .csv file
 
 import time
 import pandas as pd
+import numpy as np
+from decimal import *
 
 start_time = time.time()
 
@@ -19,8 +21,13 @@ CO2Rule = {"Normaal": [0, 999], "Hoog": [1000, 1999], "Extreem": [2000], "Consta
 AirRule = {"GoedeErvaring": [0, 0.15]}
 #OccRule = {"NietAanwezig": 0, "Aanwezig": 1}
 #vorigePIRwaarde = 0
+#temperatuurRange = np.linspace(TempRule["Normaal"][0], TempRule["Normaal"][1], num=397, dtype=float)
+temperatuurRange = np.arange(TempRule["Normaal"][0], (TempRule["Normaal"][1])+0.001, 0.01)
 temperatuurWaarden = []
 CO2Waarden = []
+
+getcontext().prec = 2
+temperatuurRange = [float(Decimal("%.2f" % e)) for e in temperatuurRange]
 
 # Naam van het bestand dat ingelezen en later opgeslagen moet worden
 Readfile = "D:\HHS TI\Jaar 4\Minor Data Science\Data\Test4_RuleValues\d2008apr-jun2015 - kopie (3).csv"
@@ -44,7 +51,7 @@ for column in range(0, len(RAWbestand.columns)):
     for row in range(0, len(RAWbestand)):
         if column == 0:     #B
             temperatuurWaarden.append(RAWbestand.iloc[row, column])
-            if RAWbestand.iloc[row, column] in range(TempRule["Normaal"][0], TempRule["Normaal"][1]+1):
+            if bool(np.in1d(RAWbestand.iloc[row, column], temperatuurRange)):
                 RAWbestand.iloc[row, column] = 0
             else:
                 RAWbestand.iloc[row, column] = 1
