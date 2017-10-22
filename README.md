@@ -4,11 +4,12 @@ De portfolio van Justin Kharpatoe voor de minor KB74 (Applied Data Science)
 ## Strucuur
 * 1\. [DataCamp](#DataCamp)  
 * 2\. [Coursera](#Coursera)  
-* 3\. [Presentaties](#Presentaties)  
-* 4\. [Uitgevoerde taken voor het project](#Taken_project)  
-* 5\. [Opdrachten van de workshops](#Opdrachten_workshops)  
-    * 5.1 [Bullshit in Data Science](#Bullshit)  
-    * 5.2 [Visualisatie](#Visualisatie)  
+* 3\. [Exploratory Data Analysis](#Exploratory_Data_Analysis)
+* 4\. [Presentaties](#Presentaties)  
+* 5\. [Uitgevoerde taken voor het project](#Taken_project)  
+* 6\. [Opdrachten van de workshops](#Opdrachten_workshops)  
+    * 6.1 [Bullshit in Data Science](#Bullshit)  
+    * 6.2 [Visualisatie](#Visualisatie)  
   
 ---	
   
@@ -24,14 +25,19 @@ In de map [Programmeren](https://github.com/JustinKharpatoe/KB74_Portfolio_Justi
   
 ---
   
-## 3 Presentaties <a name="Presentaties"></a>
+## 3 Exploratory Data Analysis <a name="Exploratory_Data_Analysis"></a>
+De gemaakte notebooks zijn te vinden in de map [Exploratory Data Analysis](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Exploratory%20Data%20Analysis)
+    
+---  
+  
+## 4 Presentaties <a name="Presentaties"></a>
 Presentaties waar ik bij betrokken was:
 * [Week 1 (01-09)](https://docs.google.com/presentation/d/19Iks0ZiQG2BRc_Mlws4JroSeeY66rIe7clJoQG2OQgQ/edit?usp=sharing)
 * [Week 5 (29-09)](https://docs.google.com/presentation/d/10pyjl8uo7GWYVokAic3fClKWJ0HHvUdUFRVBI4AedE8/edit?usp=sharing)
   
 ---
   
-## 4 Uitgevoerde taken voor het project <a name="Taken_project"></a>
+## 5 Uitgevoerde taken voor het project <a name="Taken_project"></a>
 De taken zijn op chronologische volgorde weergegeven  
 
 [Samenvatting van eerdere (studenten) onderzoeken](https://docs.google.com/document/d/1B2aVJnIshw9VviJsPL9ZuDHiEiKkeah67Yfn-D8v9U0/edit?usp=sharing):
@@ -60,11 +66,11 @@ Bayesian Belief Network testen
     
 ---
   
-## 5 Opdrachten van de workshops <a name="Opdrachten_workshops"></a>
+## 6 Opdrachten van de workshops <a name="Opdrachten_workshops"></a>
 n.n.b  
 
-### 5.1 Bullshit in Data Science <a name="Bullshit"></a>
+### 6.1 Bullshit in Data Science <a name="Bullshit"></a>
 n.n.b   
 
-### 5.2 Visualisatie <a name="Visualisatie"></a>
+### 6.2 Visualisatie <a name="Visualisatie"></a>
 n.n.b    
