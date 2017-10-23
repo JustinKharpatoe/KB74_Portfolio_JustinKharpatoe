@@ -19,13 +19,15 @@ PIRRule = {"Constant": [0.5, 1]}
 CO2Rule = {"Normaal": [0, 999], "Hoog": [1000, 1999], "Extreem": [2000], "Constant": 3}
 # Comfortabele luchtstroom gaat van 0 t/m 0.15
 AirRule = {"GoedeErvaring": [0, 0.15]}
-#OccRule = {"NietAanwezig": 0, "Aanwezig": 1}
-#vorigePIRwaarde = 0
-#temperatuurRange = np.linspace(TempRule["Normaal"][0], TempRule["Normaal"][1], num=397, dtype=float)
+
+# Confortabele temperatuur in floating points ipv ints
 temperatuurRange = np.arange(TempRule["Normaal"][0], (TempRule["Normaal"][1])+0.001, 0.01)
 temperatuurWaarden = []
 CO2Waarden = []
+#OccRule = {"NietAanwezig": 0, "Aanwezig": 1}
+#vorigePIRwaarde = 0
 
+# Zet het aantal cijfers achter de komma op 2
 getcontext().prec = 2
 temperatuurRange = [float(Decimal("%.2f" % e)) for e in temperatuurRange]
 
@@ -36,7 +38,7 @@ Writefile = Readfile[:-4] + "_RULE" + Readfile[-4:]
 # Lees het bestand in, met als seperator ; en de datum kolom als index
 RAWbestand = pd.read_csv(Readfile, sep=";", index_col=0)
 
-# Vervang de komma door een punt in twee kolommen
+# Vervang de komma door een punt in twee kolommen zodat het door python gezien word als een getal
 for i in range(0, len(RAWbestand)):
     RAWbestand.iloc[i, 0] = RAWbestand.iloc[i, 0].replace(",", ".")
     RAWbestand.iloc[i, 3] = RAWbestand.iloc[i, 3].replace(",", ".")
