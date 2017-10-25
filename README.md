@@ -62,7 +62,7 @@ Onderzoeksrapport:
     
 	
 Bayesian Belief Network testen
-* [ ] [Ruwe data aanpassen volgens regels (rule values)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule.py)    
+* [x] [Ruwe data aanpassen volgens regels (rule values)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule.py)    
     
 ---
   
