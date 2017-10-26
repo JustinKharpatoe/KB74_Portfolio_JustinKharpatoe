@@ -63,6 +63,7 @@ Onderzoeksrapport:
 	
 Bayesian Belief Network testen
 * [x] [Ruwe data aanpassen volgens regels (rule values)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule.py)    
+* [ ] [Ruwe data aanpassen volgens regels (rule values) voor een ander BBN model](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule_Ventilation.py)    
     
 ---
   
