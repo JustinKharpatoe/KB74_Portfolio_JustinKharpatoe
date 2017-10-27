@@ -5,8 +5,6 @@ RAW .csv file to Rule .csv file
 
 import time
 import pandas as pd
-import numpy as np
-from decimal import *
 
 start_time = time.time()
 
@@ -52,27 +50,27 @@ RULEbestand = pd.DataFrame(index=RAWbestand.index, columns=KolomVolgorde)
 
 print("Bezig met data bewerken...")
 for column in range(1, 4):
-    print("\tKolom %d..." % (column+1))    
+    print("\tKolom %s..." % (RAWbestand.columns[column]))    
     for row in range(0, len(RAWbestand)):   
         if column == 1:     #C
             if RAWbestand.iloc[row, column] and RAWbestand.iloc[row, 3]:        # Flow while PIR = 0
-                RULEbestand.iloc[row, 3] = 0                 
+                RULEbestand.iloc[row, 3] = 1                 
             else:
-                RULEbestand.iloc[row, 3] = 1
+                RULEbestand.iloc[row, 3] = 0
             if RAWbestand.iloc[row, column] in [0, 0.5, 1]:                     # PIR NaN
-                RULEbestand.iloc[row, 8] = 0                 
+                RULEbestand.iloc[row, 8] = 1                 
             else:
-                RULEbestand.iloc[row, 8] = 1
+                RULEbestand.iloc[row, 8] = 0
                 
         if column == 2:     #D
             CO2Waarden.append(RAWbestand.iloc[row, column])
             
             if RAWbestand.iloc[row, column] <= 400:                             # Low CO2
-                RULEbestand.iloc[row, 4] = 1
-                RULEbestand.iloc[row, 5] = 0
-            elif RAWbestand.iloc[row, column] >= 1200:                          # High CO2
                 RULEbestand.iloc[row, 4] = 0
                 RULEbestand.iloc[row, 5] = 1
+            elif RAWbestand.iloc[row, column] >= 1200:                          # High CO2
+                RULEbestand.iloc[row, 4] = 1
+                RULEbestand.iloc[row, 5] = 0
             else:
                 RULEbestand.iloc[row, 4] = 1
                 RULEbestand.iloc[row, 5] = 1             
@@ -106,7 +104,7 @@ for column in range(1, 4):
                 RULEbestand.iloc[row, 1] = 1
             if row > 1:                                                         # Frozen flow
                 if not RAWbestand.iloc[row, 2] == RAWbestand.iloc[row-1, 2] and RAWbestand.iloc[row, column] == RAWbestand.iloc[row-1, column]:
-                    RULEbestand.iloc[row, 2] = 1                                # CO2 veranderd maar flow niet
+                    RULEbestand.iloc[row, 2] = 1            # CO2 veranderd maar flow niet
                 else:
                     RULEbestand.iloc[row, 2] = 0
             else:
