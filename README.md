@@ -71,7 +71,8 @@ Bayesian Belief Network testen
 n.n.b  
 
 ### 6.1 Bullshit in Data Science <a name="Bullshit"></a>
-n.n.b   
+In de map [Bullshit in Data Science](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Bullshit%20in%20Data%Science) is het volgende document te vinden:
+* [Bullshit_in_Data_Science.docx](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Bullshit%20in%20Data%Science/Bullshit_in_Data_Science.docx)   
 
 ### 6.2 Visualisatie <a name="Visualisatie"></a>
 n.n.b    
