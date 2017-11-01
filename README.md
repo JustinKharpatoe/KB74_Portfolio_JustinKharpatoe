@@ -14,7 +14,8 @@ De portfolio van Justin Kharpatoe voor de minor KB74 (Applied Data Science)
 ---	
   
 ## 1 DataCamp <a name="DataCamp"></a>
-In de map [DataCamp](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/DataCamp) staat bewijs voor de voltooide courses en een aantal voorbeeld scripts van die doorlopen courses
+In de map [DataCamp](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/DataCamp) staat bewijs voor de voltooide courses.  
+In de sub map [Scripts](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/DataCamp/Scripts) staan een aantal voorbeelden van de doorlopen courses/chapters
   
 ---
   
@@ -72,7 +73,7 @@ n.n.b
 
 ### 6.1 Bullshit in Data Science <a name="Bullshit"></a>
 In de map [Bullshit in Data Science](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Bullshit%20in%20Data%20Science) is het volgende document te vinden:
-* [Bullshit_in_Data_Science.docx](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Bullshit%20in%20Data%20Science/Bullshit_in_Data_Science.docx)   
+* [Bullshit_in_Data_Science.docx](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Bullshit%20in%20Data%20Science/Bullshit_in_Data_Science.docx?raw=true )   
 
 ### 6.2 Visualisatie <a name="Visualisatie"></a>
 n.n.b    
