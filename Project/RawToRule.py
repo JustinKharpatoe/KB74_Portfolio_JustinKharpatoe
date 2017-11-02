@@ -6,7 +6,7 @@ RAW .csv file to Rule .csv file
 import time
 import pandas as pd
 import numpy as np
-from decimal import *
+from decimal import Decimal, getcontext
 
 start_time = time.time()
 
@@ -15,7 +15,7 @@ print("Rules en variabelen aanmaken...")
 TempRule = {"Normaal": [19, 23]}
 # PIR sensor is gitriggerd bij een waarde van 0.5 of 1
 PIRRule = {"Constant": [0.5, 1]}
-# Normaal CO2 niveau ligt tussen de 0 en 999, hoog niveau tussen 1000 en 1999 en het is extreem vanaf 2000 en meer
+# Normaal CO2 niveau ligt tussen de 0 en 999, hoog tussen 1000 en 1999 en extreem vanaf 2000 en meer
 CO2Rule = {"Normaal": [0, 999], "Hoog": [1000, 1999], "Extreem": [2000], "Constant": 3}
 # Comfortabele luchtstroom gaat van 0 t/m 0.15
 AirRule = {"GoedeErvaring": [0, 0.15]}
@@ -35,17 +35,11 @@ temperatuurRange = [float(Decimal("%.2f" % e)) for e in temperatuurRange]
 Readfile = "D:\HHS TI\Jaar 4\Minor Data Science\Data\Test4_RuleValues\d2008apr-jun2015 - kopie (3).csv"
 Writefile = Readfile[:-4] + "_RULE" + Readfile[-4:]
 
-# Lees het bestand in, met als seperator ; en de datum kolom als index
-RAWbestand = pd.read_csv(Readfile, sep=";", index_col=0)
+# Lees het bestand in, met als seperator ";", als decimale notatie "," en de datum kolom als index
+RAWbestand = pd.read_csv(Readfile, sep=";", decimal=",", index_col=0)
 
-# Vervang de komma door een punt in twee kolommen zodat het door python gezien word als een getal
-for i in range(0, len(RAWbestand)):
-    RAWbestand.iloc[i, 0] = RAWbestand.iloc[i, 0].replace(",", ".")
-    RAWbestand.iloc[i, 3] = RAWbestand.iloc[i, 3].replace(",", ".")
-
-# Converteer de twee kolommen naar floats (met komma getallen wordt het een int)    
-RAWbestand["Temperature"] = pd.to_numeric(RAWbestand["Temperature"], errors="coerce")
-RAWbestand["Air flow"] = pd.to_numeric(RAWbestand["Air flow"], errors="coerce")
+# Converteer de index naar pandas datetime format; 12.04.2015 00:00 --> 2015-12-04 00:00:00
+RAWbestand.index = pd.to_datetime(RAWbestand.index)
 
 print("Bezig met data bewerken...")    
 for column in range(0, len(RAWbestand.columns)):
