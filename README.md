@@ -72,7 +72,7 @@ Bayesian Belief Network
 * [x] [Ruwe data aanpassen volgens regels (rule values)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule.py)    
 * [x] [Ruwe data aanpassen volgens regels (rule values) voor een ander BBN model](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule_Ventilation.py)    
 * [x] [Data representeren in een plot](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/PlotData.py)    
-* [ ] De bestaande smile app (waarin de data icm het BBN model wordt verwerkt) aanpassen.
+* [ ] [De bestaande smile app (waarin de data icm het BBN model wordt verwerkt) aanpassen](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten).
   * [x] Lees laatste regel in
     * In de oude versie wordt de laatste dataregel niet geanalyseerd, hierdoor moet elke CSV *twee* lege regels bevatten aan het einde van het bestand. **Oplossing**: er bestond een lijn code die de laatste regel ALTIJD verwijderd, deze is dus weggehaald.
   * [x] Verschillende soorten delimiters accepteren
