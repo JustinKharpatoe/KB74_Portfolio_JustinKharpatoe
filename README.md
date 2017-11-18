@@ -68,11 +68,26 @@ Onderzoeksrapport:
 * [x] SAW (GeNIe Smile)    
     
 	
-Bayesian Belief Network testen
+Bayesian Belief Network
 * [x] [Ruwe data aanpassen volgens regels (rule values)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule.py)    
-* [ ] [Ruwe data aanpassen volgens regels (rule values) voor een ander BBN model](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule_Ventilation.py)    
-* [ ] [Data representeren in een plot](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/PlotData.py)    
-    
+* [x] [Ruwe data aanpassen volgens regels (rule values) voor een ander BBN model](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule_Ventilation.py)    
+* [x] [Data representeren in een plot](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/PlotData.py)    
+* [ ] De bestaande smile app (waarin de data icm het BBN model wordt verwerkt) aanpassen.
+  * [x] Lees laatste regel in
+    * In de oude versie wordt de laatste dataregel niet geanalyseerd, hierdoor moet elke CSV *twee* lege regels bevatten aan het einde van het bestand. **Oplossing**: er bestond een lijn code die de laatste regel ALTIJD verwijderd, deze is dus weggehaald.
+  * [ ] Verschillende soorten delimiters accepteren
+    * Een CSV bestand wordt alleen geaccepteerd als het *komma's* gesepareerd is, anders crashed het programma. **Oplossing**: dmv *regular expressions* worden nu ',', ';' & '\t' gesepareerde bestanden geaccepteerd.
+  * [ ] Connectie met database
+    * Op dit moment is er geen connectie met een database, voor het automatiseren is een connectie wel nodig.
+  * [ ] Automatiseren
+    * Spreekt voor zich.
+  * [ ] Resultaten <mooi> weergeven
+    * De resultaten worden nu nog in een (lelijke) tabel gegooid, voor snellere analyse (door bijvoorbeeld de gebouwbeheerder) is het noodzakelijk om de defecten eruit te laten springen.
+	
+Overige scripts
+* [x] [In Excel data per kwartier overhouden ipv per 5 minuten](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/KwartierOverhouden.bas)
+  
+  
 ---
   
 ## 7 Opdrachten van de workshops <a name="Opdrachten_workshops"></a>
