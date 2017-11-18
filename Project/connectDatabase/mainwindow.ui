@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1213</width>
+    <height>637</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>1191</width>
+      <height>615</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1191</width>
+      <height>615</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>781</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Data ophalen</string>
+     </attribute>
+     <widget class="QTextBrowser" name="logEntry">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>12</y>
+        <width>721</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>800</height>
+       </size>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="lineWrapMode">
+       <enum>QTextEdit::NoWrap</enum>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="time_end">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>140</y>
+        <width>100</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="dateTime">
+       <datetime>
+        <hour>23</hour>
+        <minute>0</minute>
+        <second>0</second>
+        <year>2000</year>
+        <month>1</month>
+        <day>1</day>
+       </datetime>
+      </property>
+      <property name="time">
+       <time>
+        <hour>23</hour>
+        <minute>0</minute>
+        <second>0</second>
+       </time>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkOutAirSpeed">
+      <property name="geometry">
+       <rect>
+        <x>265</x>
+        <y>248</y>
+        <width>124</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Out Air Speed</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkPres">
+      <property name="geometry">
+       <rect>
+        <x>63</x>
+        <y>191</y>
+        <width>127</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Beweging</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkTemp">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>63</x>
+        <y>356</y>
+        <width>127</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Temp ?</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkValve">
+      <property name="geometry">
+       <rect>
+        <x>63</x>
+        <y>329</y>
+        <width>127</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Air Valve Position</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="date_start">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>111</y>
+        <width>100</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="dateTime">
+       <datetime>
+        <hour>0</hour>
+        <minute>0</minute>
+        <second>0</second>
+        <year>2014</year>
+        <month>1</month>
+        <day>1</day>
+       </datetime>
+      </property>
+      <property name="date">
+       <date>
+        <year>2014</year>
+        <month>1</month>
+        <day>1</day>
+       </date>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Text_endtime">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>140</y>
+        <width>63</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>End time:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Text_enddate">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>140</y>
+        <width>91</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>End date:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkCO2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>63</x>
+        <y>220</y>
+        <width>127</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CO2</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkOutRain">
+      <property name="geometry">
+       <rect>
+        <x>265</x>
+        <y>329</y>
+        <width>124</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Out Rain</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkOutLight">
+      <property name="geometry">
+       <rect>
+        <x>265</x>
+        <y>220</y>
+        <width>124</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Out Avg Light</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Text_username">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>12</y>
+        <width>63</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Username:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkTempIr">
+      <property name="geometry">
+       <rect>
+        <x>63</x>
+        <y>275</y>
+        <width>127</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Temp IR Ambient</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Text_startdate">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>111</y>
+        <width>91</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start date:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Text_refreshrooms">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>73</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Refresh rooms:</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushRefresh">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>70</y>
+        <width>120</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkOutAirDest">
+      <property name="geometry">
+       <rect>
+        <x>265</x>
+        <y>275</y>
+        <width>124</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Out Air Dest</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="db_host">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>12</y>
+        <width>120</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>127.0.0.1</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushStart">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>175</x>
+        <y>407</y>
+        <width>101</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>101</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>101</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Start</string>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="time_start">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>111</y>
+        <width>100</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="dateTime">
+       <datetime>
+        <hour>6</hour>
+        <minute>0</minute>
+        <second>0</second>
+        <year>2000</year>
+        <month>1</month>
+        <day>1</day>
+       </datetime>
+      </property>
+      <property name="time">
+       <time>
+        <hour>6</hour>
+        <minute>0</minute>
+        <second>0</second>
+       </time>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Text_database">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>41</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string>Database:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Text_starttime">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>111</y>
+        <width>63</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start time:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkOutScherming">
+      <property name="geometry">
+       <rect>
+        <x>265</x>
+        <y>302</y>
+        <width>124</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Out Schermering</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkLightState">
+      <property name="geometry">
+       <rect>
+        <x>63</x>
+        <y>302</y>
+        <width>127</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Light State</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkOutHumidity">
+      <property name="geometry">
+       <rect>
+        <x>265</x>
+        <y>356</y>
+        <width>124</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Out Humidity</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Text_host">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>12</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string>Host:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="db_user">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>12</y>
+        <width>120</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>postgres</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="db_passw">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>41</y>
+        <width>120</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>geheim</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="db_name">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>41</y>
+        <width>120</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>120</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>120</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>hhsanalysis</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Text_password">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>41</y>
+        <width>63</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Password:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkOutTemp">
+      <property name="geometry">
+       <rect>
+        <x>265</x>
+        <y>191</y>
+        <width>124</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Out Temp</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkAirFlow">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>63</x>
+        <y>248</y>
+        <width>127</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Fresh Air</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>191</y>
+        <width>721</width>
+        <height>371</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="date_end">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>140</y>
+        <width>100</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="dateTime">
+       <datetime>
+        <hour>0</hour>
+        <minute>0</minute>
+        <second>0</second>
+        <year>2014</year>
+        <month>1</month>
+        <day>2</day>
+       </datetime>
+      </property>
+      <property name="date">
+       <date>
+        <year>2014</year>
+        <month>1</month>
+        <day>2</day>
+       </date>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>RAW data</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

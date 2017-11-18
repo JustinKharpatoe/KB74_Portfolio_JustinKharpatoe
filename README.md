@@ -75,7 +75,7 @@ Bayesian Belief Network
 * [ ] De bestaande smile app (waarin de data icm het BBN model wordt verwerkt) aanpassen.
   * [x] Lees laatste regel in
     * In de oude versie wordt de laatste dataregel niet geanalyseerd, hierdoor moet elke CSV *twee* lege regels bevatten aan het einde van het bestand. **Oplossing**: er bestond een lijn code die de laatste regel ALTIJD verwijderd, deze is dus weggehaald.
-  * [ ] Verschillende soorten delimiters accepteren
+  * [x] Verschillende soorten delimiters accepteren
     * Een CSV bestand wordt alleen geaccepteerd als het *komma's* gesepareerd is, anders crashed het programma. **Oplossing**: dmv *regular expressions* worden nu ',', ';' & '\t' gesepareerde bestanden geaccepteerd.
   * [ ] Connectie met database
     * Op dit moment is er geen connectie met een database, voor het automatiseren is een connectie wel nodig.
