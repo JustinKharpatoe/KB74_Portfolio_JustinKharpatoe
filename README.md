@@ -90,7 +90,7 @@ De gemaakte notebooks zijn te vinden in de map [Spark tutorials](https://github.
 9. [Broadcast](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/9%20broadcast.md)
 10. [Dataframes](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/10%20dataframes.md)
 11. [SQL](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/11%20sql.md)
-12. [Plot](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/12%20plot.md)
+12. [Plot](https://raw.githubusercontent.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/master/Spark%20tutorials/Tutorials/12%20plot.md)
 13. [Json](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/13%20json.md)
 14. [Csv2DtoList](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/14%20csv2DtoList.md)
 15. [RDF](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/15%20rdf.md)
