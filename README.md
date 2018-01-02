@@ -15,26 +15,86 @@ De portfolio van Justin Kharpatoe voor de minor KB74 (Applied Data Science)
 ---	
   
 ## 1 DataCamp <a name="DataCamp"></a>
-In de map [DataCamp](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/DataCamp) staat bewijs voor de voltooide courses.  
-In de sub map [Scripts](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/DataCamp/Scripts) staan een aantal voorbeelden van de doorlopen courses/chapters
+In de map [DataCamp](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/DataCamp) staat bewijs voor de voltooide courses.
+* [Screenshot.](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/DataCamp/VoltooideCourses.png)
+* Voor de liefhebbers zijn [in de submap een aantal scripts](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/DataCamp/Scripts) opgeslagen die voorkwamen in de courses.
   
 ---
   
 ## 2 Coursera <a name="Coursera"></a>
 In de map [Coursera](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Coursera) staat bewijs voor de voltooide Coursera courses d.m.v screenshots
-  
-In de map [Programmeren](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Coursera/Programmeren) staat bewijs voor de voltooide programmeer opdrachten d.m.v. screenshots en code    
+* Screenshot van [week 1](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Coursera/Week1.png)  
+* Screenshot van [week 2](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Coursera/Week2.png)  
+* Screenshot van [week 3](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Coursera/Week3.png)  
+* Screenshot van [week 6](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Coursera/Week6.png)  
+* In de map [Programmeren](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Coursera/Programmeren) staat bewijs voor de voltooide programmeer opdrachten d.m.v. screenshots en code    
+    * [Week 2](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Coursera/Programmeren/Week%202/ProgrammerenWeek2.PNG)
+	* [Week 3](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Coursera/Programmeren/Week%203/ProgrammerenWeek3.PNG)
+	* [Week 6](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Coursera/Programmeren/Week%206/ProgrammerenWeek6.PNG)
   
 ---
   
 ## 3 Exploratory Data Analysis <a name="Exploratory_Data_Analysis"></a>
 De gemaakte notebooks zijn te vinden in de map [Exploratory Data Analysis](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Exploratory%20Data%20Analysis)
+1. [Checking Data Edges](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/1.%20Checking%20Data%20Edges.md)
+2. [Identifying variables](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/2.%20Identifying%20variables.md)
+3. [Univariate Analysis](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/3.%20Univariate%20Analysis/3%20Univariate%20Analysis.md)
+    * [Plot 1](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/3.%20Univariate%20Analysis/output_6_0.png)
+	* [Plot 2](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/3.%20Univariate%20Analysis/output_10_1.png)
+4. [Bivariate Analysis](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/4.%20Bivariate%20Analysis/4%20Bivariate%20Analysis.md)
+    * [Plot 1](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/4.%20Bivariate%20Analysis/output_24_0.png)
+	* [Plot 2](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/4.%20Bivariate%20Analysis/output_24_1.png)
+	* [Plot 3](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/4.%20Bivariate%20Analysis/output_24_2.png)
+	* [Plot 4](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/4.%20Bivariate%20Analysis/output_24_3.png)
+	* [Plot 5](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/4.%20Bivariate%20Analysis/output_24_4.png)
+	* [Plot 6](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/4.%20Bivariate%20Analysis/output_24_5.png)
+	* [Plot 7](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/4.%20Bivariate%20Analysis/output_26_0.png)
+	* [Plot 8](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/4.%20Bivariate%20Analysis/output_33_0.png)
+	* [Plot 9](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/4.%20Bivariate%20Analysis/output_33_1.png)
+	* [Plot 10](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/4.%20Bivariate%20Analysis/output_33_2.png)
+	* [Plot 11](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/4.%20Bivariate%20Analysis/output_33_3.png)
+5. [Missing Values](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/5.%20Missing%20Values.md)
+6. [Outliers](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/6.%20Outliers/6%20Outliers.md)
+    * [Plot 1](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/6.%20Outliers/output_8_1.png)
+7. [Data Transformation](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/7.%20Data%20Transformation/7%20Data%20Transformation.md)
+	* [Plot 1](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/7.%20Data%20Transformation/output_9_0.png)
+	* [Plot 2](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/7.%20Data%20Transformation/output_9_1.png)
+	* [Plot 3](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/7.%20Data%20Transformation/output_14_0.png)
+	* [Plot 4](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/7.%20Data%20Transformation/output_14_1.png)
+	* [Plot 5](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/7.%20Data%20Transformation/output_16_0.png)
+	* [Plot 6](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/7.%20Data%20Transformation/output_16_1.png)
+	* [Plot 7](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/7.%20Data%20Transformation/output_19_0.png)
+	* [Plot 8](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/7.%20Data%20Transformation/output_19_1.png)
+	* [Plot 9](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/7.%20Data%20Transformation/output_22_0.png)
+	* [Plot 10](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/7.%20Data%20Transformation/output_23_0.png)
+	* [Plot 11](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/7.%20Data%20Transformation/output_27_0.png)
+	* [Plot 12](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/7.%20Data%20Transformation/output_28_0.png)
+	* [Plot 13](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/7.%20Data%20Transformation/output_28_1.png)
+8. [Creating Variables](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/8.%20Creating%20Variables.md)
+9. [Evaluate](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Exploratory%20Data%20Analysis/9.%20Evaluate.md)
     
 --- 
 
 ## 4 Spark tutorials <a name="Spark_tutorials"></a>
 De gemaakte notebooks zijn te vinden in de map [Spark tutorials](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Spark%20tutorials)
-    
+* [Assignment 1](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/assignment1.md)
+* [Assignment 2](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/assignment2.md)
+1. [RDD collection](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/1%20rdd%20collection.md)
+2. [RDD file](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/2%20rdd%20file.md)
+3. [Actions](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/3%20actions.md)
+4. [Key values](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/4%20key%20values.md)
+5. [Set operations](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/5%20set%20operations.md)
+6. [Join](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/6%20join.md)
+7. [Advanced RDD](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/7%20advanced%20rdd.md)
+8. [Statistics](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/8%20statistics.md)
+9. [Broadcast](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/9%20broadcast.md)
+10. [Dataframes](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/10%20dataframes.md)
+11. [SQL](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/11%20sql.md)
+12. [Plot](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/12%20plot.md)
+13. [Json](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/13%20json.md)
+14. [Csv2DtoList](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/14%20csv2DtoList.md)
+15. [RDF](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Spark%20tutorials/Tutorials/15%20rdf.md)
+      
 ---
   
 ## 5 Presentaties <a name="Presentaties"></a>
