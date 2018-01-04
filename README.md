@@ -101,36 +101,41 @@ De gemaakte notebooks zijn te vinden in de map [Spark tutorials](https://github.
 Presentaties waar ik bij betrokken was:
 * [Week 1 (01-09)](https://docs.google.com/presentation/d/19Iks0ZiQG2BRc_Mlws4JroSeeY66rIe7clJoQG2OQgQ/edit?usp=sharing)
 * [Week 5 (29-09)](https://docs.google.com/presentation/d/10pyjl8uo7GWYVokAic3fClKWJ0HHvUdUFRVBI4AedE8/edit?usp=sharing)
+* [Week 10 (10-11)](https://docs.google.com/presentation/d/1NBo-IDumMtti49HlvJk8EJvtYPltH3c8vObeci7ETPI/edit?usp=sharing)
+* [Week 14 (01-12)](https://drive.google.com/open?id=1EnGn19uR3n2Fei8axiCkhVEKz6UVyqGi)
   
 ---
   
 ## 6 Uitgevoerde taken voor het project <a name="Taken_project"></a>
-De taken zijn op chronologische volgorde weergegeven  
+De taken zijn per onderwerp op chronologische volgorde weergegeven  
 
-[Samenvatting van eerdere (studenten) onderzoeken](https://docs.google.com/document/d/1B2aVJnIshw9VviJsPL9ZuDHiEiKkeah67Yfn-D8v9U0/edit?usp=sharing):
+Om een idee te krijgen van voorafgaande projecten, zijn een aantal documenten doorgelezen. Deze documenten van eerdere studenten zijn [samengevat](https://docs.google.com/document/d/1B2aVJnIshw9VviJsPL9ZuDHiEiKkeah67Yfn-D8v9U0/edit?usp=sharing).
+Uit het bestand met de samenvattingen, heb ik gewerkt aan de volgende:
 * [x] Foutdetectie van sensoren in het klimaatregelsysteem
 * [x] Onderzoeksrapport visualisatie  
 
 
-Onderzoeksrapport:
+Aan het begin van de minor is al een start gemaakt met het onderzoeksrapport, hiervan heb ik de volgende hoofdstukken gemaakt:
 * [x] [Aanleiding](https://docs.google.com/document/d/1A0goLR-UwdK0Yzf0kNSPONY4m_gPkySrOc6TvJWvYp8/edit?usp=sharing)
 * [x] [Probleemstelling](https://docs.google.com/document/d/1GNvwjAXR1yeKmBYHNozXt-6YAk9hqL0YTXbfDKZ2xWo/edit?usp=sharing)  
 
 
-[Stakeholders analyse](https://docs.google.com/document/d/1_ye6ioAlbb7o5IaEB9R8WoXjYITNqxEaVof3VodFhtA/edit?usp=sharing):
-* [x] Inleiding
+Het leek ons handig om de belanghebbende in kaart te brengen d.m.v. een [stakeholders analyse](https://docs.google.com/document/d/1_ye6ioAlbb7o5IaEB9R8WoXjYITNqxEaVof3VodFhtA/edit?usp=sharing).
+Ik heb gewerkt aan:
+* [x] Inleiding (stuk onder de eerste kop)
 * [x] Arie Taal  
 
 
-[Onderzoeken van visualisatie tools](https://docs.google.com/document/d/1AB1OfIc8YVoMMScqCCOqiVHgcgTqMviEvohnUiASTH4/edit?usp=sharing):
+Om niet opnieuw het wiel uit te vinden, is ondezoek gedaan naar bestaande tools. De uitkomsten zijn gedocumenteerd in dit verslag [onderzoeken van visualisatie tools](https://docs.google.com/document/d/1AB1OfIc8YVoMMScqCCOqiVHgcgTqMviEvohnUiASTH4/edit?usp=sharing).
+Van de vele applicaties heb ik er drie bestudeerd:
 * [x] Building EQ
 * [x] SAW (Expert)
 * [x] SAW (GeNIe Smile)    
     
 	
-Bayesian Belief Network
+Ons project is opgedeeld in drie groepen; Deep Learning, Rule-based systems en Bayesian Belief Network. Ik hoor bij de laatste groep, en hiervoor heb ik het volgende gedaan:
 * [x] [Ruwe data aanpassen volgens regels (rule values)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule.py)    
-* [x] [Ruwe data aanpassen volgens regels (rule values) voor een ander BBN model](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule_Ventilation.py)    
+* [x] [Ruwe data aanpassen volgens regels (rule values) voor](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule_Ventilation.py) [een verbeterd BBN model (gekregen van Arie Taal)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Project/Ventilation4.xdsl)  
 * [x] [Data representeren in een plot](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/PlotData.py)    
 * [ ] [De bestaande smile app (waarin de data icm het BBN model wordt verwerkt) aanpassen](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten).
   * [x] Lees laatste regel in
@@ -144,9 +149,8 @@ Bayesian Belief Network
   * [ ] Resultaten <mooi> weergeven
     * De resultaten worden nu nog in een (lelijke) tabel gegooid, voor snellere analyse (door bijvoorbeeld de gebouwbeheerder) is het noodzakelijk om de defecten eruit te laten springen.
 	
-Overige scripts
-* [x] [In Excel data per kwartier overhouden ipv per 5 minuten](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/KwartierOverhouden.bas)
-  
+Overige werkzaamheden
+* [x] In Excel [data per kwartier overhouden ipv per 5 minuten](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/KwartierOverhouden.bas)
   
 ---
   

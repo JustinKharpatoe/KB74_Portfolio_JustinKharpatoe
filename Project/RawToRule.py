@@ -11,16 +11,16 @@ from decimal import Decimal, getcontext
 start_time = time.time()
 
 print("Rules en variabelen aanmaken...")
-# Normale temperatuur gaat van 19 t/m 23 graden
+# Normale temperatuur gaat van 19 t/m 23 graden Celcius
 TempRule = {"Normaal": [19, 23]}
 # PIR sensor is gitriggerd bij een waarde van 0.5 of 1
 PIRRule = {"Constant": [0.5, 1]}
-# Normaal CO2 niveau ligt tussen de 0 en 999, hoog tussen 1000 en 1999 en extreem vanaf 2000 en meer
+# Normaal CO2 niveau ligt tussen de 0 en 999 ppm, hoog tussen 1000 en 1999 ppm en extreem vanaf 2000 ppm en meer
 CO2Rule = {"Normaal": [0, 999], "Hoog": [1000, 1999], "Extreem": [2000], "Constant": 3}
-# Comfortabele luchtstroom gaat van 0 t/m 0.15
+# Comfortabele luchtstroom gaat van 0 t/m 0.15 m/s
 AirRule = {"GoedeErvaring": [0, 0.15]}
 
-# Confortabele temperatuur in floating points ipv ints
+# Confortabele temperatuur in floating points ipv integers
 temperatuurRange = np.arange(TempRule["Normaal"][0], (TempRule["Normaal"][1])+0.001, 0.01)
 temperatuurWaarden = []
 CO2Waarden = []
@@ -91,6 +91,9 @@ print("Eerste 3 regels:")
 print(RAWbestand.head(3))
 print("\nLaatste 3 regels:")
 print(RAWbestand.tail(3))
+
+# Sla de nieuwe rule values op in een CSV
 RAWbestand.to_csv(Writefile)
 
+# Print het aantal seconden dat het script is uitgevoerd
 print("\n\t\t\t====== Execution time: %s ======" % (time.time() - start_time))

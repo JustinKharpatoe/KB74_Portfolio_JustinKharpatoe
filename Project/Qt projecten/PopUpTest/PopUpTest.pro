@@ -1,15 +1,14 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2017-11-15T10:06:40
+# Project created by QtCreator 2017-11-22T10:07:45
 #
 #-------------------------------------------------
 
 QT       += core gui
-QT		 += sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = connectDatabase
+TARGET = PopUpTest
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -27,22 +26,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    database.cpp \
-    query.cpp \
-    datetimecalc.cpp \
-    convertdata.cpp \
-    exportcsv.cpp
+    window.cpp
 
 HEADERS += \
         mainwindow.h \
-    database.h \
-    query.h \
-    datetimecalc.h \
-    convertdata.h \
-    exportcsv.h
+    window.h
 
 FORMS += \
-        mainwindow.ui
-
-DISTFILES += \
-    DataBaseConnectieForm.ui.qml
+        mainwindow.ui \
+    window.ui

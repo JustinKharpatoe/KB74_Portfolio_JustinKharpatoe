@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="Damper">
+			<state id="false" />
+			<state id="true" />
+			<probabilities>0.01 0.99</probabilities>
+		</cpt>
+		<cpt id="Fan">
+			<state id="false" />
+			<state id="true" />
+			<probabilities>0.02 0.98</probabilities>
+		</cpt>
+		<cpt id="CO2_sensor">
+			<state id="false" />
+			<state id="true" />
+			<probabilities>0.05 0.95</probabilities>
+		</cpt>
+		<cpt id="PIR_sensor">
+			<state id="false" />
+			<state id="true" />
+			<probabilities>0.05 0.95</probabilities>
+		</cpt>
+		<cpt id="Occupancy_not_too_high">
+			<state id="false" />
+			<state id="true" />
+			<probabilities>0.1 0.9</probabilities>
+		</cpt>
+		<noisymax id="low_CO2_value">
+			<state id="too_low" />
+			<state id="normal" />
+			<parents>Damper PIR_sensor</parents>
+			<strengths>0 1 0 1</strengths>
+			<parameters>0.05000000000000004 0.95 0 1 0.05000000000000004 0.95 0 1 0 1</parameters>
+		</noisymax>
+		<cpt id="CO2_neighbours_non_identical">
+			<state id="true" />
+			<state id="false" />
+			<parents>CO2_sensor</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<noisymax id="PIR_NaN">
+			<state id="true" />
+			<state id="false" />
+			<parents>PIR_sensor</parents>
+			<strengths>0 1</strengths>
+			<parameters>1 0 0 1 0 1</parameters>
+		</noisymax>
+		<cpt id="Air_flow_sensor">
+			<state id="false" />
+			<state id="true" />
+			<probabilities>0.05 0.95</probabilities>
+		</cpt>
+		<noisymax id="low_flow_value">
+			<state id="too_low" />
+			<state id="normal" />
+			<parents>Damper PIR_sensor Fan</parents>
+			<strengths>0 1 0 1 0 1</strengths>
+			<parameters>0.5 0.5 0 1 0.95 0.05000000000000004 0 1 0.95 0.05000000000000004 0 1 0 1</parameters>
+		</noisymax>
+		<cpt id="Flow_while_PIR_0">
+			<state id="true" />
+			<state id="false" />
+			<parents>Damper</parents>
+			<probabilities>0.98 0.02000000000000002 0.02 0.98</probabilities>
+		</cpt>
+		<cpt id="CO2_frozen">
+			<state id="true" />
+			<state id="false" />
+			<parents>CO2_sensor</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<noisymax id="high_CO2_value">
+			<state id="too_high" />
+			<state id="normal" />
+			<parents>Damper Fan PIR_sensor Occupancy_not_too_high</parents>
+			<strengths>0 1 0 1 0 1 0 1</strengths>
+			<parameters>0.5 0.5 0 1 1 0 0 1 0.9 0.1 0 1 0.95 0.05000000000000004 0 1 0 1</parameters>
+		</noisymax>
+		<noisymax id="high_flow_value">
+			<state id="too_high" />
+			<state id="normal" />
+			<parents>Damper Occupancy_not_too_high</parents>
+			<strengths>0 1 0 1</strengths>
+			<parameters>0.5 0.5 0 1 0.95 0.05000000000000004 0 1 0 1</parameters>
+		</noisymax>
+		<cpt id="Flow_frozen">
+			<state id="true" />
+			<state id="false" />
+			<parents>Air_flow_sensor</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.2.2106.0 ACADEMIC" name="Network1" faultnameformat="nodestate">
+			<node id="Damper">
+				<name>Damper</name>
+				<interior color="cc99ff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>284 201 390 244</position>
+			</node>
+			<node id="Fan">
+				<name>Fan</name>
+				<interior color="cc99ff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>285 285 391 328</position>
+			</node>
+			<node id="CO2_sensor">
+				<name>CO2_sensor</name>
+				<interior color="cc99ff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>285 454 391 497</position>
+			</node>
+			<node id="PIR_sensor">
+				<name>PIR_sensor</name>
+				<interior color="cc99ff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>282 370 388 413</position>
+			</node>
+			<node id="Occupancy_not_too_high">
+				<name>Occupancy not too high</name>
+				<interior color="cc99ff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>285 116 391 159</position>
+			</node>
+			<node id="low_CO2_value">
+				<name>low CO2 value</name>
+				<interior color="ffff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>718 402 824 445</position>
+			</node>
+			<node id="CO2_neighbours_non_identical">
+				<name>CO2_neighbours non-identical</name>
+				<interior color="ffff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>706 550 837 593</position>
+			</node>
+			<node id="PIR_NaN">
+				<name>PIR NaN</name>
+				<interior color="ffff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>708 622 834 668</position>
+			</node>
+			<node id="low_flow_value">
+				<name>low flow value</name>
+				<interior color="ffff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>718 106 824 149</position>
+			</node>
+			<node id="Flow_while_PIR_0">
+				<name>Flow while PIR=0</name>
+				<interior color="ffff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>718 180 824 223</position>
+			</node>
+			<node id="CO2_frozen">
+				<name>CO2_frozen</name>
+				<interior color="ffff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>718 476 824 519</position>
+			</node>
+			<node id="high_CO2_value">
+				<name>high CO2 value</name>
+				<interior color="ffff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>718 328 824 371</position>
+			</node>
+			<node id="high_flow_value">
+				<name>high flow value</name>
+				<interior color="ffff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>718 32 824 75</position>
+			</node>
+			<node id="Flow_frozen">
+				<name>Flow frozen</name>
+				<interior color="ffff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>718 254 824 297</position>
+			</node>
+			<node id="Air_flow_sensor">
+				<name>Air flow sensor</name>
+				<interior color="cc99ff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>289 539 395 582</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>
