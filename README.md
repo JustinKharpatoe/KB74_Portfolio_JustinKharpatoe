@@ -1,7 +1,7 @@
 # KB74_Portfolio_JustinKharpatoe
 De portfolio van Justin Kharpatoe voor de minor KB74 (Applied Data Science)
 
-## Strucuur
+## Structuur
 * 1\. [DataCamp](#DataCamp)  
 * 2\. [Coursera](#Coursera)  
 * 3\. [Exploratory Data Analysis](#Exploratory_Data_Analysis)
@@ -137,27 +137,82 @@ Ons project is opgedeeld in drie groepen; Deep Learning, Rule-based systems en B
 * [x] [Ruwe data aanpassen volgens regels (rule values)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule.py)    
 * [x] [Ruwe data aanpassen volgens regels (rule values)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule_Ventilation.py) voor een verbeterd [BBN model (gekregen van Arie Taal)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Project/Ventilation4.xdsl)  
 * [x] [Data representeren in een plot](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/PlotData.py)    
-* [ ] [De bestaande smile app (waarin de data icm het BBN model wordt verwerkt) aanpassen](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten).
+* De bestaande [smile app](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten/smileApp) (waarin de data icm het BBN model wordt verwerkt) aanpassen.
   * [x] Lees laatste regel in
     * In de oude versie wordt de laatste dataregel niet geanalyseerd, hierdoor moet elke CSV *twee* lege regels bevatten aan het einde van het bestand.
-	* **Oplossing**: er was een lijn code die de laatste regel ALTIJD verwijderd, deze is weggehaald:
+	* **Oplossing**: er was een lijn code in het bestand [import.cpp](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/datacenter/import.cpp#L103) die de laatste regel ALTIJD verwijderd, deze is weggehaald:
 	
 	   ```C++
 	   allData.erase(allData.end()-1);
 	   ```
   * [x] Verschillende soorten delimiters accepteren
     * Een CSV bestand wordt alleen geaccepteerd als het *komma's* gesepareerd is, anders crashed het programma. 
-	* **Oplossing**: dmv *regular expressions* worden nu ',', ';' & '\t' gesepareerde bestanden geaccepteerd door op de eerste regel (regel met kolomnamen) te zoeken naar de eerst voorkomende delimiter:
+	* **Oplossing**: dmv *regular expressions* worden nu ',', ';' & '\t' gesepareerde bestanden geaccepteerd door op de eerste regel (regel met kolomnamen) te zoeken naar de eerst voorkomende delimiter in het bestand [import.cpp](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/datacenter/import.cpp#L82):
 	   
 	   ```C++
 	   QString headerRow = rowOfData.at(0);
 	   std::size_t delimPos = headerRow.toStdString().find_first_of(",;\t");
 	   QString delim = headerRow.at(delimPos);
 	   ```
-  * [ ] Connectie met database
-    * Op dit moment is er geen connectie met een database, voor het automatiseren is een connectie wel nodig.
+  * [ ] Oude database data gebruiken
+    * Op dit moment is er geen connectie met een database, voor het automatiseren en voor gebruiksgemak is een connectie wel nodig.
+	* [x] Überhaupt connectie
+	  * Voor de connectie met de oude database moest het een en ander verplaatst worden van de SAW applicatie (waar al connectie gemaakt kan worden) naar de Smile app. 
+	  
+	     Voor het importeren vanuit de database wordt een nieuw venster geopend waarin de nodige gegevens ingevuld kunnen worden.
+		 Het eerste probleem dat naar voren kwam was dat sommige sensoren niet werden opgehaald (ook in de SAW applicatie), het ging hierbij om de CO2 en “ambient temperature”:
+		 
+		 In de functie `void addNormalSensors()` van [windowconnectdatabase.cpp](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/windowconnectdatabase.cpp#L382):
+	     `normalSensors[k]==37 && sensornaam.mid(0,12)=="MeasCO2Level"`    →    `normalSensors[k]==37 && sensornaam.mid(0,9)=="CO2 Level"`  
+         In de functie `void on_checkTempIr_clicked()` van [windowconnectdatabase.cpp](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/windowconnectdatabase.cpp#L519):
+	     `normalSensors.push_back(48);`     →     `normalSensors.push_back(5);`
+		 
+         Bij CO2 werd dus gekeken naar een verkeerde omschrijving, en bij de temperatuur werd de verkeerde fieldtype toegevoegd (48 is air flow).
+	* [x] Data exporten
+	  * Op in ieder geval twee momenten moet de data geëxporteerd kunnen worden; als het is opgehaald van de database (ruwe waardes) en als het is geanalyseerd, dus het resultaat. Verder is het ook nog mogelijk om de rule waardes op te slaan.
+	  * De eerste wordt gedaan in de functie `void windowConnectDatabase::on_pushExportCSV_clicked()` van [windowconnectdatabase.cpp](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/windowconnectdatabase.cpp#L406)
+	  * Om de rule waardes te kunnen exporteren wordt een [pop-up venster geopend nadat de database data is geanalyseerd](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/mainwindow.cpp#L451) (tot en met regel 464)
+	  * De laatste export optie is het [exporteren van het resultaat](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/mainwindow.cpp#L1363).
+	* [ ] Data gebruiken in de smileApp (data analyseren)
+	  * Op dit moment kan analyseren helaas alleen voor lokalen met een maximum airflow van 80 m/s, omdat de waarde van een hoge airflow nog niet bepaald is voor de andere lokalen. Maar hier is alsnog hoe te werk wordt gegaan.  
+	  
+	    De data uit de database moet worden geconverteerd naar ‘rule values’ zodat het gebruikt kan worden voor analyse met het BBN model (Ventilation4). Daarom is de functie [convertDataDabase()](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/datacenter/convertdata.cpp#L452) aangemaakt. Het nadeel van deze functie is dat het alleen werkt met het [huidige BBN model](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Project/Ventilation4.xdsl).  
+		De functie returned een `std::vector< std::vector<T> >`, waarbij 'T' een `float` of een `QString` is (zijn wel beide aparte functies). De functie geeft een lege vector terug als een operatie niet lukt, en een vector met ‘rule values’ als dit wel lukt. In de MainWindow wordt de return waarde opgevangen door lokale variabele. Deze worden daarna in een if statement gecheckt of ze leeg zijn door `“variabele”.empty()`:  
+		```C++
+        if(newSensorData.empty() || newData.empty()) {
+            return;
+        }
+		```
+
+		Als eerst wordt er ruimte gereserveerd voor de nieuwe data:  
+		`std::vector< std::vector<float> > ruleData(newColumn[0].size(), std::vector<float>(data.size()));`  
+		Deze is negen bij X, waar X het aantal datapunten is van de te converteren data. Er wordt van te voren geheugen gealloceerd zodat in de code erna, een waarde op een “willekeurige” plek kan worden toegekend.
+		Daarna moeten een viertal grenswaardes worden gedefinieerd:  
+		* Lage CO2	= 418
+		* Hoge CO2	= 630
+		* Lage airflow	= 7
+		* Hoge airflow 	= 70  
+		
+		De waardes zijn bepaald door middel van de 25e percentiel en 75e percentiel op de dataset van 2.008: 2014-2015 (per uur).  
+		Daarna moeten de kolommen van CO2, airflow en de PIR sensor achterhaald worden. Dit gebeurd in de functie [getColPos()](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/datacenter/convertdata.cpp#L731), deze neemt als argumenten een vector van QStrings en drie references naar variabelen. In de functie wordt gezocht naar kolomnamen die of “CO2, of “Air”, of “PIR” bevatten. De positie wordt dan opgeslagen in de relevante meegegeven reference. Als alle drie de kolommen zijn gevonden, wordt `True` gereturned. Daarna worden de drie variabelen met twee verlaagt, omdat de kolommen "Datum" en "Tijd" worden gestript van de "echte" data maar niet van de headerData.  
+		Mocht een kolom niet gevonden worden, dan wordt `False` gereturned. De return waarde wordt opgevangen in een if statement die een warning genereert als `False` is gereturned door de vorige functie, en zal daarna een lege vector terugsturen. 
+
+		In de volgende stuk code worden de waardes omgezet in enen en nullen. De eerste for loop, loopt over `data.size();` het aantal rijen. En de tweede for loop, loopt over `data[i].size()` (het aantal kolommen), waarbij i wordt gedefinieerd in de vorige for loop. In de tweede for loop wordt gecontroleerd op de kolommen in if statements:  
+		```C++
+		if(j == CO2pos)
+		else if(j == Airpos)
+		else if(j == PIRpos)
+		```
+  * [ ] Nieuwe database data gebruiken
+    * [ ] Connectie
+	* [ ] Data exporteren
+	* [ ] Data gebruiken in smile (data analyseren)
+  * [ ] Error afhandeling
+    * Tot nu toe moeten veel handelingen stapsgewijs gebeuren en kunnen ze niet zonder de output van de vorige stap.  
+	
+	   Door bijvoorbeeld checks te gebruiken hoeft de smileApp niet persé te crashen.
   * [ ] Automatiseren
-    * Spreekt voor zich.
+    * Het liefst wil de gebouwbeheerder meldingen ontvangen zonder er wat voor te doen, dat wordt (ongeveer) met automatiseren bedoeld.
   * [ ] Resultaten <mooi> weergeven
     * De resultaten worden nu nog in een (lelijke) tabel gegooid, voor snellere analyse (door bijvoorbeeld de gebouwbeheerder) is het noodzakelijk om de defecten eruit te laten springen.
 	
