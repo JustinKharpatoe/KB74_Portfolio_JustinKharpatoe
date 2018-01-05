@@ -135,13 +135,25 @@ Van de vele applicaties heb ik er drie bestudeerd:
 	
 Ons project is opgedeeld in drie groepen; Deep Learning, Rule-based systems en Bayesian Belief Network. Ik hoor bij de laatste groep, en hiervoor heb ik het volgende gedaan:
 * [x] [Ruwe data aanpassen volgens regels (rule values)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule.py)    
-* [x] [Ruwe data aanpassen volgens regels (rule values) voor](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule_Ventilation.py) [een verbeterd BBN model (gekregen van Arie Taal)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Project/Ventilation4.xdsl)  
+* [x] [Ruwe data aanpassen volgens regels (rule values)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule_Ventilation.py) voor een verbeterd [BBN model (gekregen van Arie Taal)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Project/Ventilation4.xdsl)  
 * [x] [Data representeren in een plot](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/PlotData.py)    
 * [ ] [De bestaande smile app (waarin de data icm het BBN model wordt verwerkt) aanpassen](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten).
   * [x] Lees laatste regel in
-    * In de oude versie wordt de laatste dataregel niet geanalyseerd, hierdoor moet elke CSV *twee* lege regels bevatten aan het einde van het bestand. **Oplossing**: er bestond een lijn code die de laatste regel ALTIJD verwijderd, deze is dus weggehaald.
+    * In de oude versie wordt de laatste dataregel niet geanalyseerd, hierdoor moet elke CSV *twee* lege regels bevatten aan het einde van het bestand.
+	* **Oplossing**: er was een lijn code die de laatste regel ALTIJD verwijderd, deze is weggehaald:
+	
+	   ```C++
+	   allData.erase(allData.end()-1);
+	   ```
   * [x] Verschillende soorten delimiters accepteren
-    * Een CSV bestand wordt alleen geaccepteerd als het *komma's* gesepareerd is, anders crashed het programma. **Oplossing**: dmv *regular expressions* worden nu ',', ';' & '\t' gesepareerde bestanden geaccepteerd.
+    * Een CSV bestand wordt alleen geaccepteerd als het *komma's* gesepareerd is, anders crashed het programma. 
+	* **Oplossing**: dmv *regular expressions* worden nu ',', ';' & '\t' gesepareerde bestanden geaccepteerd door op de eerste regel (regel met kolomnamen) te zoeken naar de eerst voorkomende delimiter:
+	   
+	   ```C++
+	   QString headerRow = rowOfData.at(0);
+	   std::size_t delimPos = headerRow.toStdString().find_first_of(",;\t");
+	   QString delim = headerRow.at(delimPos);
+	   ```
   * [ ] Connectie met database
     * Op dit moment is er geen connectie met een database, voor het automatiseren is een connectie wel nodig.
   * [ ] Automatiseren
