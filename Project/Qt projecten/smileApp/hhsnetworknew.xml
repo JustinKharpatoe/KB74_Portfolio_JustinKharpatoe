@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Network1" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="Fout3_CO2sensorkapot">
+			<state id="Werkt" />
+			<state id="Kapot" />
+			<probabilities>0.97 0.03</probabilities>
+		</cpt>
+		<cpt id="Fout4_Overbezetting">
+			<state id="Overbezet" />
+			<state id="NietOverbezet" />
+			<probabilities>0.4 0.6</probabilities>
+		</cpt>
+		<cpt id="Fout1_LuchtklepVentilatieKapot">
+			<state id="Werkt" />
+			<state id="Kapot" />
+			<probabilities>0.95 0.05</probabilities>
+		</cpt>
+		<cpt id="Fout2_PIRsensorkapot">
+			<state id="intact" />
+			<state id="defect" />
+			<probabilities>0.99 0.01</probabilities>
+		</cpt>
+		<cpt id="Symptoom1_gemetenCO2">
+			<state id="Normaal" />
+			<state id="Hoog" />
+			<state id="Extreem" />
+			<state id="constant" />
+			<parents>Fout3_CO2sensorkapot Fout4_Overbezetting Fout2_PIRsensorkapot Fout1_LuchtklepVentilatieKapot</parents>
+			<probabilities>0.1 0.7 0.2 0 0.1 0.6 0.3 0 0.1 0.6 0.3 0 0.1 0.6 0.3 0 0.75 0.2 0.05 0 0.4 0.3 0.3 0 0.4 0.3 0.3 0 0.4 0.3 0.3 0 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97 0.01 0.01 0.01 0.97</probabilities>
+		</cpt>
+		<cpt id="temperature">
+			<state id="normaal" />
+			<state id="hoog" />
+			<parents>Fout4_Overbezetting Fout1_LuchtklepVentilatieKapot</parents>
+			<probabilities>0.2 0.8 0.1 0.9 0.7 0.3 0.4 0.6</probabilities>
+		</cpt>
+		<cpt id="Symptoom5_ErvarenLuchtkwaliteit">
+			<state id="GoedeErvaring" />
+			<state id="SlechteErvaring" />
+			<parents>Fout4_Overbezetting Fout1_LuchtklepVentilatieKapot Fout2_PIRsensorkapot</parents>
+			<probabilities>0.7 0.3 0.4 0.6 0.4 0.6 0.4 0.6 0.95 0.05 0.65 0.35 0.65 0.35 0.65 0.35</probabilities>
+		</cpt>
+		<cpt id="Symptoom6_ConstantePIR">
+			<state id="Constant" />
+			<state id="NietConstant" />
+			<parents>Fout2_PIRsensorkapot</parents>
+			<probabilities>0 1 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="occupancy">
+			<state id="aanwezigheid_gemeten" />
+			<state id="geen_aanwezigheid_gemeten" />
+			<parents>Fout2_PIRsensorkapot Symptoom1_gemetenCO2 temperature</parents>
+			<probabilities>0.25 0.75 0.5 0.5 0.95 0.05 0.999 0.001 0.4 0.6 0.8 0.2 0.2 0.8 0.4 0.6 0.05 0.95 0.05 0.95 0.05 0.95 0.05 0.95 0.05 0.95 0.05 0.95 0.05 0.95 0.05 0.95</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.1.380.0" name="Network1" faultnameformat="nodestate">
+			<node id="Fout3_CO2sensorkapot">
+				<name>CO2-sensor defect</name>
+				<interior color="cc99ff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>130 198 206 259</position>
+			</node>
+			<node id="Fout4_Overbezetting">
+				<name>too many people</name>
+				<interior color="cc99ff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>222 131 302 181</position>
+			</node>
+			<node id="Fout1_LuchtklepVentilatieKapot">
+				<name>Airvalve/Ventilation defect</name>
+				<interior color="cc99ff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>268 351 380 421</position>
+			</node>
+			<node id="Fout2_PIRsensorkapot">
+				<name>PIR-sensor defect</name>
+				<interior color="cc99ff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>413 289 485 347</position>
+			</node>
+			<node id="Symptoom1_gemetenCO2">
+				<name>CO2 value</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>137 329 226 384</position>
+			</node>
+			<node id="temperature">
+				<name>temperature</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>222 235 293 279</position>
+			</node>
+			<node id="Symptoom5_ErvarenLuchtkwaliteit">
+				<name>air quality</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>383 152 473 208</position>
+			</node>
+			<node id="Symptoom6_ConstantePIR">
+				<name>PIR sensor value</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>397 375 475 423</position>
+			</node>
+			<node id="occupancy">
+				<name>occupancy</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>313 227 404 283</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>
