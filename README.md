@@ -231,8 +231,14 @@ Overige werkzaamheden
 n.n.b  
 
 ### 7.1 Bullshit in Data Science <a name="Bullshit"></a>
-In de map [Bullshit in Data Science](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Bullshit%20in%20Data%20Science) is het volgende document te vinden:
-* [Bullshit_in_Data_Science.docx](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Bullshit%20in%20Data%20Science/Bullshit_in_Data_Science.docx?raw=true )   
+In het document [Bullshit_in_Data_Science.docx](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Bullshit%20in%20Data%20Science/Bullshit_in_Data_Science.docx?raw=true) is het volgende te vinden:  
+* In de eerste opdracht wordt per categorie (nieuws, wetenschappelijk artikellen, overige artikellen/tweets etc., video's & grafieken) twee gevonden voorbeelden van bullshit uitgewerkt.
+* Voor opdracht twee moet je zelf geproduceerde bullshit opschrijven (min. vijf voorbeelden).
+* De derde opdracht gaat over het uitwerken van één voorbeeld van opdracht een volgens het volgende format:
+  * Waarom is het bullshit?
+  * Hoe is de bullshit ontstaan?
+  * Wat voor consequenties heeft of kan het verspreiden van deze bullshit hebben?
+* Bij opdracht vier moet je aangeven wat je tegen het voorbeeld van opdracht 3 kan doen of hebt gedaan.
 
 ### 7.2 Visualisatie <a name="Visualisatie"></a>
 n.n.b    
