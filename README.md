@@ -137,7 +137,7 @@ Ons project is opgedeeld in drie groepen; Deep Learning, Rule-based systems en B
 * [x] [Ruwe data aanpassen volgens regels (rule values)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule.py)    
 * [x] [Ruwe data aanpassen volgens regels (rule values)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/RawToRule_Ventilation.py) voor een verbeterd [BBN model (gekregen van Arie Taal)](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Project/Ventilation4.xdsl)  
 * [x] [Data representeren in een plot](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/PlotData.py)    
-* De bestaande [smile app](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten/smileApp) (waarin de data icm het BBN model wordt verwerkt) aanpassen.
+* [ ] De bestaande [smile app](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten/smileApp) (waarin de data icm het BBN model wordt verwerkt) aanpassen.
   * [x] Lees laatste regel in
     * In de oude versie wordt de laatste dataregel niet geanalyseerd, hierdoor moet elke CSV *twee* lege regels bevatten aan het einde van het bestand.
 	* **Oplossing**: er was een lijn code in het bestand [import.cpp](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/datacenter/import.cpp#L103) die de laatste regel ALTIJD verwijderd, deze is weggehaald:
@@ -145,6 +145,7 @@ Ons project is opgedeeld in drie groepen; Deep Learning, Rule-based systems en B
 	   ```C++
 	   allData.erase(allData.end()-1);
 	   ```
+	* De oplossing is getest in [dit Qt project](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten/ImportCSV_Test)
   * [x] Verschillende soorten delimiters accepteren
     * Een CSV bestand wordt alleen geaccepteerd als het *komma's* gesepareerd is, anders crashed het programma. 
 	* **Oplossing**: dmv *regular expressions* worden nu ',', ';' & '\t' gesepareerde bestanden geaccepteerd door op de eerste regel (regel met kolomnamen) te zoeken naar de eerst voorkomende delimiter in het bestand [import.cpp](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/datacenter/import.cpp#L82):
@@ -154,6 +155,7 @@ Ons project is opgedeeld in drie groepen; Deep Learning, Rule-based systems en B
 	   std::size_t delimPos = headerRow.toStdString().find_first_of(",;\t");
 	   QString delim = headerRow.at(delimPos);
 	   ```
+	* De oplossing is getest in [dit Qt project](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten/ImportCSV_Test)
   * [ ] Oude database data gebruiken
     * Op dit moment is er geen connectie met een database, voor het automatiseren en voor gebruiksgemak is een connectie wel nodig.
 	* [x] Überhaupt connectie
@@ -168,6 +170,9 @@ Ons project is opgedeeld in drie groepen; Deep Learning, Rule-based systems en B
 	     `normalSensors.push_back(48);`     →     `normalSensors.push_back(5);`
 		 
          Bij CO2 werd dus gekeken naar een verkeerde omschrijving, en bij de temperatuur werd de verkeerde fieldtype toegevoegd (48 is air flow).
+	  * De oplossing is getest in de volgende Qt projecten:  
+	    * [Conecctie](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten/connectDatabase_Test)
+	    * [Pop-up window](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten/PopUp_Test)
 	* [x] Data exporten
 	  * Op in ieder geval twee momenten moet de data geëxporteerd kunnen worden; als het is opgehaald van de database (ruwe waardes) en als het is geanalyseerd, dus het resultaat. Verder is het ook nog mogelijk om de rule waardes op te slaan.
 	  * De eerste wordt gedaan in de functie `void windowConnectDatabase::on_pushExportCSV_clicked()` van [windowconnectdatabase.cpp](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/windowconnectdatabase.cpp#L406)
@@ -203,6 +208,7 @@ Ons project is opgedeeld in drie groepen; Deep Learning, Rule-based systems en B
 		else if(j == Airpos)
 		else if(j == PIRpos)
 		```
+	  * Bovenstaande code is getest in [dit Qt project](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten/RawToRule_Test)
   * [ ] Nieuwe database data gebruiken
     * [ ] Connectie
 	* [ ] Data exporteren
