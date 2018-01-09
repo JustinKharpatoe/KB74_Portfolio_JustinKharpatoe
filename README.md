@@ -29,7 +29,7 @@ In de map [Coursera](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKha
 * Screenshot van [week 6](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Coursera/Week6.png)  
 * In de map [Programmeren](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Coursera/Programmeren) staat bewijs voor de voltooide programmeer opdrachten d.m.v. screenshots en code    
     * [Week 2](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Coursera/Programmeren/Week%202/ProgrammerenWeek2.PNG)
-	* [Week 3](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Coursera/Programmeren/Week%203/ProgrammerenWeek3.PNG)
+	* [Week 3 deel 1](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Coursera/Programmeren/Week%203/ProgrammerenWeek3_1.PNG) & [Week 3 deel 2](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Coursera/Programmeren/Week%203/ProgrammerenWeek3_2.PNG)
 	* [Week 6](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Coursera/Programmeren/Week%206/ProgrammerenWeek6.PNG)
   
 ---
