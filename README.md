@@ -99,10 +99,11 @@ De gemaakte notebooks zijn te vinden in de map [Spark tutorials](https://github.
   
 ## 5 Presentaties <a name="Presentaties"></a>
 Presentaties waar ik bij betrokken was:
-* [Week 1 (01-09)](https://docs.google.com/presentation/d/19Iks0ZiQG2BRc_Mlws4JroSeeY66rIe7clJoQG2OQgQ/edit?usp=sharing)
-* [Week 5 (29-09)](https://docs.google.com/presentation/d/10pyjl8uo7GWYVokAic3fClKWJ0HHvUdUFRVBI4AedE8/edit?usp=sharing)
-* [Week 10 (10-11)](https://docs.google.com/presentation/d/1NBo-IDumMtti49HlvJk8EJvtYPltH3c8vObeci7ETPI/edit?usp=sharing)
-* [Week 14 (01-12)](https://drive.google.com/open?id=1EnGn19uR3n2Fei8axiCkhVEKz6UVyqGi)
+* [Week 1 (01-09-2017)](https://docs.google.com/presentation/d/19Iks0ZiQG2BRc_Mlws4JroSeeY66rIe7clJoQG2OQgQ/edit?usp=sharing)
+* [Week 5 (29-09-2017)](https://docs.google.com/presentation/d/10pyjl8uo7GWYVokAic3fClKWJ0HHvUdUFRVBI4AedE8/edit?usp=sharing)
+* [Week 10 (10-11-2017)](https://docs.google.com/presentation/d/1NBo-IDumMtti49HlvJk8EJvtYPltH3c8vObeci7ETPI/edit?usp=sharing)
+* [Week 14 (01-12-2017)](https://drive.google.com/open?id=1EnGn19uR3n2Fei8axiCkhVEKz6UVyqGi)
+* [Week 17 (12-01-2018)](https://docs.google.com/presentation/d/1CEky0LD1tvlZWhuVjVuKb9g9n-M6dqfTri8_zsZGny0/edit?usp=sharing)
   
 ---
   
