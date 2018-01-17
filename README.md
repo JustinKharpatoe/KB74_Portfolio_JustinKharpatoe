@@ -127,7 +127,7 @@ Ik heb gewerkt aan:
 * [x] Arie Taal  
 
 
-Om niet opnieuw het wiel uit te vinden, is ondezoek gedaan naar bestaande tools. De uitkomsten zijn gedocumenteerd in dit verslag [onderzoeken van visualisatie tools](https://docs.google.com/document/d/1AB1OfIc8YVoMMScqCCOqiVHgcgTqMviEvohnUiASTH4/edit?usp=sharing).
+Om niet opnieuw het wiel uit te vinden, is onderzoek gedaan naar bestaande tools. De uitkomsten zijn gedocumenteerd in dit verslag [onderzoeken van visualisatie tools](https://docs.google.com/document/d/1AB1OfIc8YVoMMScqCCOqiVHgcgTqMviEvohnUiASTH4/edit?usp=sharing).
 Van de vele applicaties heb ik er drie bestudeerd:
 * [x] Building EQ
 * [x] SAW (Expert)
