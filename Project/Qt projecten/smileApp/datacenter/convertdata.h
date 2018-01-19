@@ -18,8 +18,8 @@ class convertData: public import {
         std::vector< std::vector<QString> > convertDataPres(std::vector< std::vector<QString> > data, std::vector< std::vector<QString> > rawdata, QString sensorNaam,QString sensorID);
         std::vector< std::vector<QString> > convertDataGen(std::vector< std::vector<QString> > data, std::vector< std::vector<QString> > rawdata, QString sensorNaam, QString sensorID);
         std::vector< std::vector<QString> > convertDataAirValve(std::vector< std::vector<QString> > data, std::vector< std::vector<QString> > rawdata, QString sensorNaam, QString sensorID);
-        std::vector< std::vector<QString> > convertDataDatabase(std::vector<std::vector<QString> > data, std::vector<QString> colnames, std::vector<std::vector<QString> > newColumn, int timeInterval);
-        std::vector< std::vector<float> > convertDataDatabase(std::vector<std::vector<float> > data, std::vector<QString> colnames, std::vector< std::vector<QString> > newColumn, int timeInterval);
+        std::vector< std::vector<QString> > convertDataDatabase(std::vector<std::vector<QString> > data, std::vector<QString> colnames, std::vector<std::vector<QString> > newColumn, int timeInterval, unsigned int highFlow, unsigned int lowFlow);
+        std::vector< std::vector<float> > convertDataDatabase(std::vector<std::vector<float> > data, std::vector<QString> colnames, std::vector< std::vector<QString> > newColumn, int timeInterval, unsigned int highFlow, unsigned int lowFlow);
         bool convertEverything(int currentSensor, int currentSensorID, windowConnectDatabase* parentWindow, std::vector< std::vector<QString> > *currentData, std::vector< std::vector<QString> > currentResult);
 
     private:

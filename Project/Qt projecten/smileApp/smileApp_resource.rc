@@ -1,6 +1,6 @@
 #include <windows.h>
 
-IDI_ICON1	ICON	DISCARDABLE	"D:\\HHS TI\\Jaar 4\\1. Minor Data Science\\SAW\\Source code (QT project)\\smileApp - Backup\\graph.ico"
+IDI_ICON1	ICON	DISCARDABLE	"D:\\HHS TI\\Jaar 4\\01 Minor Data Science\\SAW\\Source code (QT project)\\smileApp - Backup\\graph.ico"
 
 VS_VERSION_INFO VERSIONINFO
 	FILEVERSION 0,0,0,0

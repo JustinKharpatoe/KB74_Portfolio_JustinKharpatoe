@@ -674,3 +674,8 @@ int windowConnectDatabase::getTimeSlot()
 {
     return ui->comboTime->currentText().toInt();
 }
+
+QString windowConnectDatabase::getRuimtenaam()
+{
+    return ruimtenaam;
+}

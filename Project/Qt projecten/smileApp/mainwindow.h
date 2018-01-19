@@ -72,7 +72,9 @@ private:
     int tableCol;
 
     template<class T> static std::vector< std::vector<T> > transposeData(std::vector< std::vector<T> > oldData);
+    bool makeHighAirflowMap();
 
+    std::map<QString, std::pair<unsigned int, unsigned int> > HighAirflow;
     /// is from the Xml file
     QMap<QString, vector<QString> > datamap;
     QMap<QString, vector<QString> > resultsNodemap;

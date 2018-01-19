@@ -394,7 +394,6 @@ void MainWindow::on_importDatabaseCSV_clicked()
         readyCSVDatabase=true;
         vector< vector<QString> > data,
                                   newData,
-                                  //colnames,
                                   newColumn,
                                   timeData;
         vector< vector<float> > newSensorData;
@@ -417,12 +416,29 @@ void MainWindow::on_importDatabaseCSV_clicked()
         dataLogger->write("Starting readCsvDatabase");
         if(importData.readCsvDatabase(data, 2, 2, true))
         {
+            if(!this->makeHighAirflowMap()) {
+                QMessageBox* warning = new QMessageBox();
+                warning->warning(0, "Warning!", "Controleer of het bestand highAirflowData.csv aanwezig is in de map smileLab!");
+                delete warning;
+                return;
+            }
+            unsigned int highFlow = 10000, lowFlow = 0;
+            QString ruimtenaam = Window_ConnectDatabase->getRuimtenaam();
+            dataLogger->write(QString("Map size in main: " + QString::number(HighAirflow.size())));
+            for(auto it = HighAirflow.cbegin(); it != HighAirflow.cend(); ++it) {
+                //dataLogger->write(QString(it->first + ", met max flow " + QString::number(it->second)));
+                if(it->first.contains(ruimtenaam/*.left(5).mid(0, 5)*/, Qt::CaseInsensitive)) {   // Zoek op de eerste 5 karakters
+                    highFlow = it->second.first;
+                    lowFlow = it->second.second;
+                }
+            }
+            this->new_logConfig_entry(QString("lokaal " + ruimtenaam + ", Hoge airflow is: " + QString::number(highFlow) + " & Lage airflow is:" + QString::number(lowFlow)));
+
             //colnames = importData.getHeaderData();
             //newData = databaseToRule.convertDataDatabase(importData.getTotalData(), importData.getHeaderData()[0], newColumn, Window_ConnectDatabase->getTimeSlot());
-            newSensorData = databaseToRule.convertDataDatabase(this->transposeData(importData.getSensorData()), importData.getHeaderData()[0], newColumn, Window_ConnectDatabase->getTimeSlot());
-            newData = databaseToRule.convertDataDatabase(this->transposeData(importData.getTotalData()), importData.getHeaderData()[0], newColumn, Window_ConnectDatabase->getTimeSlot());
-            if(newSensorData.empty() || newData.empty())
-            {
+            newSensorData = databaseToRule.convertDataDatabase(this->transposeData(importData.getSensorData()), importData.getHeaderData()[0], newColumn, Window_ConnectDatabase->getTimeSlot(), highFlow, lowFlow);
+            newData = databaseToRule.convertDataDatabase(this->transposeData(importData.getTotalData()), importData.getHeaderData()[0], newColumn, Window_ConnectDatabase->getTimeSlot(), highFlow, lowFlow);
+            if(newSensorData.empty() || newData.empty()) {
                 /*QMessageBox* warning = new QMessageBox();
                 warning->warning(0, "Warning!", "Vector is leeg!");
                 delete warning;*/
@@ -1394,4 +1410,61 @@ template<class T> std::vector< std::vector<T> > MainWindow::transposeData(std::v
             newDataTrans[j][i] = oldData[i][j];
 
     return newDataTrans;
+}
+
+bool MainWindow::makeHighAirflowMap()
+{
+    vector< vector<QString> > airData, airColumn;
+    QString data, delimiter,
+            filenameAirFlow = "smileLab/highAirflowData.csv";
+    QStringList rowOfData, rowData;
+    int rowbegin = 1, descrPos = 0, highFlowPos = 0, lowFlowPos = 0;
+
+    QFile importedCSV(filenameAirFlow);
+    if (importedCSV.open(QFile::ReadOnly)){
+        data = importedCSV.readAll();
+        rowOfData = data.split("\n", QString::SkipEmptyParts);
+        importedCSV.close();
+    } else{
+        std::cout << "Could not open file" << std::endl;
+        return false;
+    }
+    QString headerRow = rowOfData.at(0);
+    std::size_t delimPos = headerRow.toStdString().find_first_of(",;\t");
+    delimiter = headerRow.at(delimPos);
+    for ( int x = 0; x < rowOfData.size(); x++) {
+        rowData = rowOfData.at(x).split(delimiter);
+        std::vector<QString> row;
+        for ( int y = 0; y < rowData.size(); y++) {
+            QString rowString = rowData[y];
+            if(rowString.compare("\r")) {
+              row.push_back(rowData[y]);
+            }
+        }
+        if(x<rowbegin){
+           airColumn.push_back(row);
+        } else {
+           airData.push_back(row);
+        }
+    }
+
+    for(unsigned int i = 0; i < airColumn[0].size(); i++)
+    {
+        if(airColumn[0][i].contains("class_Description", Qt::CaseInsensitive)) {
+            descrPos = i;
+        }
+        else if(airColumn[0][i].contains("High_value", Qt::CaseSensitive)) {
+            highFlowPos = i;
+        }
+        else if(airColumn[0][i].contains("Low_value", Qt::CaseSensitive)) {
+            lowFlowPos = i;
+        }
+    }
+    dataLogger->write(QString("Description column: " + QString::number(descrPos) + " column nummer (max flow)" + QString::number(highFlowPos)+ " waarde nummer (low flow)" + QString::number(lowFlowPos)));
+
+    for(unsigned int i = 0; i < airData.size(); i++) {
+        HighAirflow.insert(make_pair(airData[i][descrPos], make_pair(airData[i][highFlowPos].toUInt(), airData[i][lowFlowPos].toUInt())));
+    }
+    dataLogger->write(QString("Map size in functie: " + QString::number(HighAirflow.size())));
+    return true;
 }

@@ -265,15 +265,17 @@ std::vector< std::vector<QString> > convertData::convertDataAirValve(std::vector
     return data;
 }
 
-std::vector< std::vector<QString> > convertData::convertDataDatabase(std::vector<std::vector<QString> > data, std::vector<QString> colnames, std::vector< std::vector<QString> > newColumn, int timeInterval)
+std::vector< std::vector<QString> > convertData::convertDataDatabase(std::vector<std::vector<QString> > data, std::vector<QString> colnames, std::vector< std::vector<QString> > newColumn, int timeInterval, unsigned int highFlow, unsigned int lowFlow)
 {
     std::vector< std::vector<QString> > ruleData(newColumn[0].size(), std::vector<QString>(data.size()));
 
     // Volgende variabelen zijn bepaald dmv de 25 percentile en 75 percentile op de dataset van 2.008 2014-2015 (data per uur)
     const int Low_CO2Rule = 418,
               High_CO2Rule = 630,
-              Low_Airflow = 7,
-              High_Airflow = 70;
+              Low_Airflow = lowFlow,
+              //Low_Airflow = 7,
+              High_Airflow = highFlow;
+              //High_Airflow = 70;
 
     int CO2pos = -1, Airpos = -1, PIRpos = -1;
     if(!(this->getColPos(colnames, CO2pos, Airpos, PIRpos)))
@@ -449,15 +451,17 @@ std::vector< std::vector<QString> > convertData::convertDataDatabase(std::vector
     return ruleData;
 }
 
-std::vector< std::vector<float> > convertData::convertDataDatabase(std::vector<std::vector<float> > data, std::vector<QString> colnames, std::vector< std::vector<QString> > newColumn, int timeInterval)
+std::vector< std::vector<float> > convertData::convertDataDatabase(std::vector<std::vector<float> > data, std::vector<QString> colnames, std::vector< std::vector<QString> > newColumn, int timeInterval, unsigned int highFlow, unsigned int lowFlow)
 {
     std::vector< std::vector<float> > ruleData(newColumn[0].size(), std::vector<float>(data.size()));
 
     // Volgende variabelen zijn bepaald dmv de 25 percentile en 75 percentile op de dataset van 2.008 2014-2015 (data per uur)
     const int Low_CO2Rule = 418,
               High_CO2Rule = 630,
-              Low_Airflow = 7,
-              High_Airflow = 70;
+              Low_Airflow = lowFlow,
+              //Low_Airflow = 7,
+              High_Airflow = highFlow;
+              //High_Airflow = 70;
 
     int CO2pos = -1, Airpos = -1, PIRpos = -1;
     if(!(this->getColPos(colnames, CO2pos, Airpos, PIRpos)))

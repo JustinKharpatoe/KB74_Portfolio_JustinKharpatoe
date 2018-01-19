@@ -30,6 +30,7 @@ public:
     void new_log_entry(QString newTextLine);
     std::vector< std::vector<QString> > getDatabaseData();
     int getTimeSlot();
+    QString getRuimtenaam();
 
 private slots:
     void on_pushStart_clicked();

@@ -1,0 +1,347 @@
+Owner_id;id;High_value;Low_value;class_Description;sensor_Description
+3;249167;25455;3394;Haagse Hogeschool Delft;MeasAirflow Haagse Hogeschool Delft
+132;9829;152;20;OG014B ODK 2.113;Actual Air Flow OG014B
+581;36752;75;10;OG045C ODK 2.027;Actual Air Flow OG045C
+592;37458;1148;153;OG0134 VAV10 2e verd;Actual Air Flow OG0134
+624;38988;57;7;OG044F ODK 2.111;Actual Air Flow OG044F
+650;40229;513;68;OG042A ODK 2.052;Actual Air Flow OG042A
+672;41407;180;24;OG0450 ODK 2.051;Actual Air Flow OG0450
+685;42140;292;38;OG0181 ODK 2.001;Actual Air Flow OG0181
+695;42726;22;3;OG017D ODK 2.083;Actual Air Flow OG017D
+736;44769;53;7;OG047E ODK 2.024;Actual Air Flow OG047E
+796;48184;53;7;OG0471 ODK 2.107;Actual Air Flow OG0471
+830;50022;71;9;OG013A ODK 2.081;Actual Air Flow OG013A
+848;50642;18;2;OG0182 ODK 2.014;Actual Air Flow OG0182
+865;51244;74;9;OG0455 ODK 2.012;Actual Air Flow OG0455
+869;51378;125;16;OG0422 ODK 2.045;Actual Air Flow OG0422
+884;51947;317;42;OG0152 ODK 2.101;Actual Air Flow OG0152
+895;52314;97;13;OG0445 ODK 2.084;Actual Air Flow OG0445
+898;52415;23;3;OG0449 ODK 2.055;Actual Air Flow OG0449
+901;52512;169;22;OG0474 ODK 2.021;Actual Air Flow OG0474
+904;52613;43;5;OG0477 ODK 2.082;Actual Air Flow OG0477
+908;52749;17;2;OG0460 ODK 2.016;Actual Air Flow OG0460
+910;52819;27;3;OG014C ODK 2.094;Actual Air Flow OG014C
+921;53191;134;17;OG014F ODK 2.015;Actual Air Flow OG014F
+925;53323;187;25;OG0169 ODK 2.031;Actual Air Flow OG0169
+927;53389;134;17;OG0462 ODK 2.067;Actual Air Flow OG0462
+930;53494;147;19;OG0140 ODK 2.041;Actual Air Flow OG0140
+934;53634;69;9;OG046E ODK 2.093;Actual Air Flow OG046E
+937;53735;526;70;OG0156 ODK 2.072;Actual Air Flow OG0156
+939;53805;0;0;OG018A ODK 2.088;Actual Air Flow OG018A
+943;53937;186;24;OG0143 ODK 2.035;Actual Air Flow OG0143
+953;54267;41;5;OG0457 ODK 2.006;Actual Air Flow OG0457
+954;54302;52;7;OG044C ODK 2.087;Actual Air Flow OG044C
+957;54403;73;9;OG0417 ODK 2.079;Actual Air Flow OG0417
+961;54535;118;15;OG0463 ODK 2.069;Actual Air Flow OG0463
+964;54632;50;6;OG013E ODK 2.076;Actual Air Flow OG013E
+968;54768;306;40;OG0448 ODK 2.003;Actual Air Flow OG0448
+971;54873;369;49;OG0122 ODK 2.117;Actual Air Flow OG0122
+973;54939;79;10;OG0441 ODK 2.011;Actual Air Flow OG0441
+976;55044;68;9;OG0175 ODK 2.097;Actual Air Flow OG0175
+985;55339;32;4;OG0480 ODK 2.008;Actual Air Flow OG0480
+992;55574;305;40;OG043C ODK 2.007;Actual Air Flow OG043C
+996;55710;108;14;OG046A ODK 2.073;Actual Air Flow OG046A
+1003;55941;38;5;OG015D ODK 2.022;Actual Air Flow OG015D
+1008;56110;47;6;OG014D ODK 2.018;Actual Air Flow OG014D
+1246;69198;188;25;OG0461 ODK 2.124;Actual Air Flow OG0461
+1250;69330;227;30;OG0429 ODK 2.122;Actual Air Flow OG0429
+1251;69365;25;3;OG0172 ODK 2.132;Actual Air Flow OG0172
+1255;69501;0;0;OG041E ODK 2.134;Actual Air Flow OG041E
+1339;361304;;;  Kelder;MeasAirflow Kelder
+1340;361330;10281;1370; Begane grond;MeasAirflow Begane grond
+1341;361356;5749;766;1e Verdieping;MeasAirflow 1e Verdieping
+1342;249238;8816;1175;2e Verdieping;MeasAirflow 2e Verdieping
+1353;302633;186;24;2.031 (A2.02a) Instructieruimte;MeasAirflow A2.02a Instructieruimte
+1354;587298;750;100;2.035 (A2.02b) Instructieruimte;MeasAirflow 2.035 (A2.02b) Instructieruimte
+1355;587451;747;99;2.041 (A2.02c) Instructieruimte;MeasAirflow 2.041 (A2.02c) Instructieruimte
+1356;298602;75;10;2.027 (A2.08b) Werkkamer;MeasAirflow A2.08b Werkkamer
+1357;298741;125;16;2.045 (A2.08c) Werkkamer;MeasAirflow A2.08c Werkkamer
+1359;299019;317;42;2.101 (A3.01) Studielandschap;MeasAirflow A3.01 Studielandschap
+1360;587652;734;97;2.084 (A3.02a) Instructieruimte;MeasAirflow 2.084 (A3.02a) Instructieruimte
+1361;587805;1074;143;2.088 (A3.02b) Instructieruimte;MeasAirflow 2.088 (A3.02b) Instructieruimte
+1362;587958;1173;156;2.122 (A3.02c) Instructieruimte;MeasAirflow 2.122 (A3.02c) Instructieruimte
+1363;588111;927;123;2.119 (A3.03a) Praktijkruimte;MeasAirflow 2.119 (A3.03a) Praktijkruimte
+1364;588264;1058;141;2.117 (A3.03b) Praktijkruimte;MeasAirflow 2.117 (A3.03b) Praktijkruimte
+1365;588417;808;107;2.132 (A3.03c) Praktijrkuimte;MeasAirflow 2.132 (A3.03c) Praktijrkuimte
+1366;588570;8;1;2.134 (A3.04a) Praktijkruimte;MeasAirflow 2.134 (A3.04a) Praktijkruimte
+1367;588723;814;108;2.124 (A3.04b) Praktijkruimte;MeasAirflow 2.124 (A3.04b) Praktijkruimte
+1368;588876;2504;333;2.138 (A3.04c) Praktijkruimte;MeasAirflow 2.138 (A3.04c) Praktijkruimte
+1369;589029;77;10;2.094 (A3.06a) Spreekkamer;MeasAirflow 2.094 (A3.06a) Spreekkamer
+1370;300548;152;20;2.113 (A3.07) Vergaderruimte;MeasAirflow A3.07 Vergaderruimte
+1371;300687;68;9;2.097 (A3.08a) Werkkamer;MeasAirflow A3.08a Werkkamer
+1372;300826;69;9;2.093 (A3.08b) Spreekkamer;MeasAirflow A3.08b Spreekkamer
+1373;300965;59;7;2.087 (A3.08c) Werkkamer;MeasAirflow A3.08c Werkkamer
+1375;301243;57;7;2.111 (A3.10a) Stafkamer;MeasAirflow A3.10a Stafkamer
+1376;301382;21;2;2.109 (A3.10b) Stafkamer;MeasAirflow A3.10b Stafkamer
+1377;301521;53;7;2.107 (A3.11) Werkkamer;MeasAirflow A3.11 Werkkamer
+1378;589278;752;100;2.052 (B1.01) Studielandschap;MeasAirflow 2.052 (B1.01) Studielandschap
+1379;589431;794;105;2.073 (B1.02) Instructieruimte;MeasAirflow 2.073 (B1.02) Instructieruimte
+1380;301938;115;15;2.069 (B1.03a) Praktijkruimte;MeasAirflow B1.03a Praktijkruimte
+1381;589596;864;115;2.072 (B1.03b) Praktijkruimte;MeasAirflow 2.072 (B1.03b) Praktijkruimte
+1382;589749;571;76;2.067 (B1.03c) Praktijkruimte;MeasAirflow 2.067 (B1.03c) Praktijkruimte
+1383;302355;180;24;2.051 (B1.04) Praktijkruimte;MeasAirflow B1.04 Praktijkruimte
+1384;302494;43;5;2.082 (B1.07) Vergaderruimte;MeasAirflow B1.07 Vergaderruimte
+1385;302772;71;9;2.081 (B1.08a) Werkkamer;MeasAirflow B1.08a Werkkamer
+1386;302911;50;6;2.076 (B1.08b) Werkkamer;MeasAirflow B1.08b Werkkamer
+1387;303050;23;3;2.055 (B1.09) Stafkamer;MeasAirflow B1.09 Stafkamer
+1388;303189;73;9;2.079 (B1.10a/b) Stafkamer;MeasAirflow B1.10a/b Stafkamer
+1389;303328;22;3;2.083 (B1.11) Werkkamer;MeasAirflow B1.11 Werkkamer
+1390;297073;306;40;2.007 (B2.01) Studielandschap;MeasAirflow B2.01 Studielandschap
+1391;297629;170;22;2.021 (B2.02) Instructieruimte;MeasAirflow B2.02 Instructieruimte
+1392;297351;292;39;2.001 (B2.03a) Praktijkruimte;MeasAirflow B2.03a Praktijkruimte
+1393;590022;691;92;2.003 (B2.03b) Praktijkruimte;MeasAirflow 2.003 (B2.03b) Praktijkruimte
+1394;254022;134;17;2.015 (B2.04) Praktijkruimte;MeasAirflow B2.04 Praktijkruimte
+1395;590162;83;11;2.008 (B2.06a) Spreekkamer;MeasAirflow 2.008 (B2.06a) Spreekkamer
+1396;590290;107;14;2.006 (B2.06b) Spreekkamer;MeasAirflow 2.006 (B2.06b) Spreekkamer
+1397;297490;79;10;2.011 (B2.07) Vergaderkamer ;MeasAirflow B2.07 Vergaderkamer 
+1398;297768;53;7;2.024 (B2.08a) Werkkamer;MeasAirflow B2.08a Werkkamer
+1399;297907;74;9;2.012 (B2.08b) Werkkamer;MeasAirflow B2.08b Werkkamer
+1400;249359;17;2;2.016 (B2.09) Stafkamer;MeasAirflow B2.09 Stafkamer
+1401;298046;38;5;2.022 (B2.10a) Stafkamer;MeasAirflow B2.10a Stafkamer
+1402;254923;47;6;2.018 (B2.10b) Stafkamer;MeasAirflow B2.10b Stafkamer
+1403;298185;18;2;2.014 (B2.11) Werkkamer;MeasAirflow B2.11 Werkkamer
+1405;329001;;;2.108 (F01) Toilet heren 2e Verdieping Zuid-links;MeasAirflow F01 Toilet heren 2e Verdieping Zuid-links
+1406;329092;;;2.102 (F02) Miva toilet 2e Verdieping;MeasAirflow F02 Miva toilet 2e Verdieping
+1430;328546;;;J1.17 SER;MeasAirflow J1.17 SER
+1431;590582;3088;411;K.102 (C1.06) Societeit;MeasAirflow K.102 (C1.06) Societeit
+1433;590737;;;K.097 (C3.06) Kantoor;MeasAirflow K.097 (C3.06) Kantoor
+1434;590865;688;91;K.093 (C4.06) Opslag / Klus;MeasAirflow K.093 (C4.06) Opslag / Klus
+1435;590993;;;K.091 (C5.06) Commissie;MeasAirflow K.091 (C5.06) Commissie
+1439;591124;;;K.114 (E02) Opslag Apparatuur;MeasAirflow K.114 (E02) Opslag Apparatuur
+1440;591252;;;K.108 (E07) Werkplaats;MeasAirflow K.108 (E07) Werkplaats
+1443;591380;;;K.103 (G01) Fietsenstalling;MeasAirflow K.103 (G01) Fietsenstalling
+1449;314217;982;130;0.052 (A1.01) Studielandschap;MeasAirflow 0.052 (A1.01) Studielandschap
+1450;314357;236;31;0.067 (A1.03a) Praktijkruimte;MeasAirflow 0.067 (A1.03a) Praktijkruimte
+1451;314497;92;12;0.073 (A1.03b) Praktijkruimte;MeasAirflow 0.073 (A1.03b) Praktijkruimte
+1452;314637;98;13;0.075 (A1.03c) Praktijkruimte;MeasAirflow 0.075 (A1.03c) Praktijkruimte
+1453;591556;904;120;0.081 (A1.04c) Praktijkruimte;MeasAirflow 0.081 (A1.04c) Praktijkruimte
+1454;591684;1257;167;0.015 (B3.01) Studielandschap;MeasAirflow 0.015 (B3.01) Studielandschap
+1455;591837;848;113;0.014 (B3.03b B3.04) Praktijkruimte;MeasAirflow 0.014 (B3.03b B3.04) Praktijkruimte
+1460;591965;2213;295;0.087 (B4.03) Praktijkruimte;MeasAirflow 0.087 (B4.03) Praktijkruimte
+1461;592118;;;0.005 (B4.01) Studielandschap;MeasAirflow 0.005 (B4.01) Studielandschap
+1462;592271;760;101;0.097 (B4.04) Praktijkruimte;MeasAirflow 0.097 (B4.04) Praktijkruimte
+1464;355243;192;25;0.116 (C02) Informatiebalie;MeasAirflow C02 Informatiebalie
+1466;382668;2252;300;0.113 (C05) Restaurant;MeasAirflow C05 Restaurant
+1467;382830;676;90;0.022 (C07) Atrium;MeasAirflow C07 Mediatheek
+1468;592477;40;5;0.118 (C1.10) EHBO;MeasAirflow 0.118 (C1.10) EHBO
+1469;592605;56;7;0.112 (C11/12) Regio Regisseur;MeasAirflow 0.112 (C11/12) Regio Regisseur
+1470;471495;126;16;0.109 (0) Keuken;MeasAirflow 0.109 (0) Keuken
+1471;321365;13;1;0.114 (D07/08) Flexplek;MeasAirflow 0.114 (D07/08) Flexplek
+1472;592752;40;5;0.035 (E02) Opslag Facilitair bedrijf;MeasAirflow 0.035 (E02) Opslag Facilitair bedrijf
+1473;592880;;;0.101 (E03) Opslag Algemeen;MeasAirflow 0.101 (E03) Opslag Algemeen
+1475;593008;118;15;0.033 (E05) Schoonmaak Kantoor;MeasAirflow 0.033 (E05) Schoonmaak Kantoor
+1476;593161;124;16;0.031 (E07) Facilitair Kantoor;MeasAirflow 0.031 (E07) Facilitair Kantoor
+1477;331587;;;0.042 (F01) Toilet Heren Begane Grond Noord;MeasAirflow F01 Toilet Heren Begane Grond Noord
+1478;331678;;;0.032 (F01) Toilet Dames Begane Grond Noord;MeasAirflow F01 Toilet Dames Begane Grond Noord
+1479;331769;;;0.108 (F01) Toilet Heren Begane Grond Zuid-links;MeasAirflow F01 Toilet Heren Begane Grond Zuid-links
+1480;383082;;;0.102 (F2.02) Toilet Miva;MeasAirflow F2.02 Toilet Miva
+1482;331860;;;0.104 (F01) Toilet Heren Begane Grond Zuid-rechts;MeasAirflow F01 Toilet Heren Begane Grond Zuid-rechts
+1496;593358;;;0.122 (H18) Garderobe;MeasAirflow 0.122 (H18) Garderobe
+1505;593486;680;90;1.082 (A1.02a) Instructieruimte;MeasAirflow 1.082 (A1.02a) Instructieruimte
+1506;593614;767;102;1.081 (A1.02b) Instructieruimte;MeasAirflow 1.081 (A1.02b) Instructieruimte
+1507;593742;781;104;1.075 (A1.02c) Instructieruimte;MeasAirflow 1.075 (A1.02c) Instructieruimte
+1508;316078;0;0;1.088 (A1.04b) Praktijkriumte;MeasAirflow 1.088 (A1.04b) Praktijkriumte
+1574;80315;269;35;OG016B ODK 1.081;Actual Air Flow OG016B
+1594;81536;212;28;OG0133 ODK 1.074;Actual Air Flow OG0133
+1597;81637;25;3;OG0438 ODK 1.082;Actual Air Flow OG0438
+1602;593882;70;9;1.064 (A1.06a) Spreekkamer;MeasAirflow 1.064 (A1.06a) Spreekkamer
+1603;594010;65;8;1.086 (A1.06b) Spreekkamer;MeasAirflow 1.086 (A1.06b) Spreekkamer
+1604;594163;428;57;1.072 (A1.07) Vergaderkamer;MeasAirflow 1.072 (A1.07) Vergaderkamer
+1605;316658;68;9;1.067 (A1.08a) Werkkamer;MeasAirflow 1.067 (A1.08a) Werkkamer
+1606;316798;108;14;1.069 (A1.08b) Werkkamer;MeasAirflow 1.069 (A1.08b) Werkkamer
+1607;316938;113;15;1.071 (A1.08c) Werkkamer;MeasAirflow 1.071 (A1.08c) Werkkamer
+1609;317218;213;28;1.074 (A1.10a) Stafkamer;MeasAirflow 1.074 (A1.10a) Stafkamer
+1611;594376;817;109;1.044 (A2.01) Studielandschap;MeasAirflow 1.044 (A2.01) Studielandschap
+1612;594529;775;103;1.132 (A2.03a) Praktijkruimte;MeasAirflow 1.132 (A2.03a) Praktijkruimte
+1613;594682;849;113;1.122 (A2.03b) Praktijkruimte;MeasAirflow 1.122 (A2.03b) Praktijkruimte
+1614;594835;1084;144;1.052 (A2.03c) Praktijkruimte;MeasAirflow 1.052 (A2.03c) Praktijkruimte
+1616;594988;1241;165;1.015 (A2.04a) Praktijkruimte;MeasAirflow 1.015 (A2.04a/b) Praktijkruimte
+1618;595294;479;63;1.053 (A2.04c) Praktijkruimte;MeasAirflow 1.053 (A2.04c) Praktijkruimte
+1620;595550;365;48;1.043 (A2.07) Vergaderkamer;MeasAirflow 1.043 (A2.07) Vergaderkamer
+1621;319265;37;5;1.049 (A2.08a) Werkkamer;MeasAirflow 1.049 (A2.08a) Werkkamer
+1622;319405;19;2;1.112 (A2.09) Vergaderkamer;MeasAirflow 1.112 (A2.09) Vergaderkamer
+1624;319545;74;9;1.047 (A2.10a/b) Stafkamer;MeasAirflow 1.047 (A2.10a/b) Stafkamer
+1625;595739;677;90;1.021 (B3.02) Instructieruimte;MeasAirflow 1.021 (B3.02) Instructieruimte
+1626;319825;46;6;1.111 (B3.07) Opslag ICT;MeasAirflow 1.111 (B3.07) Opslag ICT
+1627;319965;18;2;1.031 (B3.08a) Werkkamer;MeasAirflow 1.031 (B3.08a) Werkkamer
+1628;595916;146;19;1.033 (B3.08b) Werkkamer;MeasAirflow 1.033 (B3.08b) Werkkamer
+1629;320245;22;3;1.041 (B3.09) Stafkamer;MeasAirflow 1.041 (B3.09) Stafkamer
+1630;320385;39;5;1.037 (B3.10a) Stafkamer;MeasAirflow 1.037 (B3.10a) Stafkamer
+1631;320525;25;3;1.039 (B3.10b) Stafkamer;MeasAirflow 1.039 (B3.10b) Stafkamer
+1632;320665;33;4;1.035 (B3.11) Werkkamer;MeasAirflow 1.035 (B3.11) Werkkamer
+1633;596092;688;91;1.097 (B4.02) Instructieruimte;MeasAirflow 1.097 (B4.02) Instructieruimte
+1634;596245;107;14;1.094 (B4.06a) Spreekkamer;MeasAirflow 1.094 (B4.06a) Spreekkamer
+1635;321085;55;7;1.107 (B4.07) Vergaderkamer;MeasAirflow 1.107 (B4.07) Vergaderkamer
+1636;321505;29;3;1.099 (B4.08a) Werkkamer;MeasAirflow 1.099 (B4.08a) Werkkamer
+1637;321645;70;9;1.093 (B4.08b) Werkkamer;MeasAirflow 1.093 (B4.08b) Werkkamer
+1638;321785;34;4;1.087 (B4.09) Stafkamer;MeasAirflow 1.087 (B4.09) Stafkamer
+1639;321925;0;0;1.103 (B4.10a) Stafkamer;MeasAirflow 1.103 (B4.10a) Stafkamer
+1640;322065;46;6;1.116 (B4.10b) Vergaderkamer;MeasAirflow 1.116 (B4.10b) Stafkamer
+1641;322205;19;2;1.091 (B4.11) Werkkamer;MeasAirflow 1.091 (B4.11) Werkkamer
+1642;322345;15;2;1.114 (D01) Afdelingsmanager;MeasAirflow 1.114 (D01) Afdelingsmanager
+1643;322485;23;3;1.118 (D03) Roosterbureau;MeasAirflow 1.118 (D03) Roosterbureau
+1644;322625;200;26;1.113 (D04) Administratie;MeasAirflow 1.113 (D04) Administratie
+1647;322765;0;0;1.101 (D07) Lectorkamer;MeasAirflow 1.101 (D07) Lectorkamer
+1648;596531;109;14;1.119 (D08) Flexwerkplek;MeasAirflow 1.119 (D08) Flexwerkplek
+1650;323045;24;3;1.045 (D10) ICT Helpdesk;MeasAirflow 1.045 (D10) ICT Helpdesk
+1651;332182;;;1.042 (F01) Toilet heren 1e Verdieping Noord;MeasAirflow F01 Toilet heren 1e Verdieping Noord
+1652;332273;;;1.106 (F01) Toilet dames 1e verdieping Zuid;MeasAirflow F01 Toilet dames 1e verdieping Zuid
+1653;332364;;;1.108 (F01) Toilet heren 1e verdieping Zuid-links;MeasAirflow F01 Toilet heren 1e verdieping Zuid-links
+1654;332455;;;1.104 (F01) Toilet heren 1e verdieping Zuid-rechts;MeasAirflow F01 Toilet heren 1e verdieping Zuid-rechts
+1655;596687;;;1.038 (F03) Schoonmaak F15 1e verdieping;MeasAirflow 1.038 (F03) Schoonmaak F15 1e verdieping
+1656;332686;;;1.036 (F01) Toilet dames 1e verdieping Noord;MeasAirflow F01 Toilet dames 1e verdieping Noord
+1676;596867;66;8;1.062 (J16) Kopieerruimte 1e verdieping;MeasAirflow 1.062 (J16) Kopieerruimte 1e verdieping
+1692;242850;;;OG0B5B;Actual Air Flow OG0B5B
+1694;82867;37;5;OG0470 ODK 1.049;Actual Air Flow OG0470
+1700;83180;27;3;OG016E ODK 1.055;Actual Air Flow OG016E
+1736;85074;100;13;OG0188 ODK 1.043;Actual Air Flow OG0188
+1881;93375;39;5;OG012A ODK 1.037;Actual Air Flow OG012A
+1885;93624;25;3;OG0472 ODK 1.039;Actual Air Flow OG0472
+1897;94293;18;2;OG0149 ODK 1.031;Actual Air Flow OG0149
+1932;96100;29;3;OG0439 ODK 1.032;Actual Air Flow OG0439
+2109;107452;107;14;OG0171 ODK 1.051;Actual Air Flow OG0171
+2124;108221;1082;144;OG0136 VAV12 2e verd;Actual Air Flow OG0136
+2131;108605;113;15;OG0410 ODK 1.071;Actual Air Flow OG0410
+2169;110598;108;14;OG0145 ODK 1.069;Actual Air Flow OG0145
+2172;110699;189;25;OG0132 ODK 1.072;Actual Air Flow OG0132
+2183;111064;68;9;OG047D ODK 1.067;Actual Air Flow OG047D
+2194;111429;37;5;OG0434 ODK 1.064;Actual Air Flow OG0434
+2238;113874;10;1;OG045B ODK 1.074;Actual Air Flow OG045B
+2286;116914;13;1;OG0428 ODK 1.086;Actual Air Flow OG0428
+2338;119377;3358;447;OG047F VAV6 2e verd;Actual Air Flow OG047F
+2343;119543;4015;535;OG0452 VAV-R-5;Actual Air Flow OG0452
+2463;126872;19;2;OG0416 ODK 1.112;Actual Air Flow OG0416
+2549;328637;;;2.104 (F01) Toilet heren 2e Verdieping Zuid-rechts;MeasAirflow F01 Toilet heren 2e Verdieping Zuid-rechts
+2550;328728;;;2.042 (F01) Toilet heren 2e Verdieping Noord;MeasAirflow F01 Toilet heren 2e Verdieping Noord
+2551;328819;;;2.032 (F01) Toilet dames 2e Verdieping Noord;MeasAirflow F01 Toilet dames 2e Verdieping Noord
+2552;328910;;;2.106 (F01) Toilet dames 2e Verdieping Zuid;MeasAirflow F01 Toilet dames 2e Verdieping Zuid
+2553;597011;61;8;1.032 (B3.06a) Spreekkamer;MeasAirflow 1.032 (B3.06a) Spreekkamer
+2554;597139;74;9;1.034 (B3.06b) Spreekkamer;MeasAirflow 1.034 (B3.06b) Spreekkamer
+2590;134024;18;2;OG0465 ODK 2.091;Actual Air Flow OG0465
+2592;134203;1256;167;OG0453 VAV-R-1;Actual Air Flow OG0453
+2596;134452;1960;261;OG0400 VAV2 2e verd;Actual Air Flow OG0400
+2598;134631;1059;141;OG0437 VAV11 2e verd;Actual Air Flow OG0437
+2601;134845;193;25;OG0167 ODK 2.119;Actual Air Flow OG0167
+2606;135212;2811;374;OG018D VAV-R-13;Actual Air Flow OG018D
+2608;135391;24;3;OG017C ODK 1.045;Actual Air Flow OG017C
+2614;135928;47;6;OG0458 ODK 1.033;Actual Air Flow OG0458
+2632;137028;877;116;OG042B VAV4 2e verd;Actual Air Flow OG042B
+2635;137129;1331;177;OG0131 VAV-R-3;Actual Air Flow OG0131
+2642;169600;20;2;OG0431 ODK 1.091;Actual Air Flow OG0431
+2644;137767;14;1;OG018F ODK 1.094;Actual Air Flow OG018F
+2647;137868;70;9;OG0482 ODK 1.093;Actual Air Flow OG0482
+2650;138082;29;3;OG0137 ODK 1.099;Actual Air Flow OG0137
+2652;138152;55;7;OG0481 ODK 1.107;Actual Air Flow OG0481
+2847;150499;682;90;OG0129 VAV9 1e verd;Actual Air Flow OG0129
+2890;153719;117;15;OG0163 ODK 1.021;Actual Air Flow OG0163
+2916;155383;211;28;OG041B ODK 1.013;Actual Air Flow OG041B
+2986;159451;0;0;OG0430 ODK 0.015;Actual Air Flow OG0430
+3013;160532;26;3;OG041A ODK 1.052;Actual Air Flow OG041A
+3029;161066;200;26;OG045F ODK 1.113;Actual Air Flow OG045F
+3049;161724;456;60;OG043F ODK 1.044;Actual Air Flow OG043F
+3055;161926;157;20;OG044A ODK 1.132;Actual Air Flow OG044A
+3082;162791;238;31;OG0157 ODK 1.015;Actual Air Flow OG0157
+3151;166773;167;22;OG014A ODK 1.122;Actual Air Flow OG014A
+3174;167839;198;26;OG043B ODK 1.075;Actual Air Flow OG043B
+3214;169855;0;0;OG012D ODK 1.088;Actual Air Flow OG012D
+3235;171044;413;55;OG0467 ODK 1.097;Actual Air Flow OG0467
+3240;171257;34;4;OG0159 ODK 1.087;Actual Air Flow OG0159
+3278;173324;22;3;OG0183 ODK 1.041;Actual Air Flow OG0183
+3287;173788;30;4;OG0135 ODK 1.034;Actual Air Flow OG0135
+3308;174745;853;113;OG040D VAV3 1e verd;Actual Air Flow OG040D
+3360;177929;16;2;OG015E ODK 1.114;Actual Air Flow OG015E
+3520;181555;29;3;OG017A ODK 1.053;Actual Air Flow OG017A
+3539;182194;74;9;OG040C ODK 1.047;Actual Air Flow OG040C
+3542;182299;46;6;OG0459 ODK 1.111;Actual Air Flow OG0459
+3777;198591;114;15;OG0423 ODK 0.014;Actual Air Flow OG0423
+3874;205160;428;57;OG0166 ODK 0.014;Actual Air Flow OG0166
+3875;205195;1016;135;OG040E VAV-R-2;Actual Air Flow OG040E
+3960;208134;93;12;OG0456 ODK 0.014;Actual Air Flow OG0456
+4001;210228;1220;162;OG0479 VAV1 bg;Actual Air Flow OG0479
+4107;216187;255;34;OG0440 ODK 0.014;Actual Air Flow OG0440
+4287;225235;1245;166;OG0191 VAV-R-6;Actual Air Flow OG0191
+4313;226664;64;8;OG044E ODK 0.035;Actual Air Flow OG044E
+4320;226893;1597;213;OG046C VAV7 bg;Actual Air Flow OG046C
+4342;227399;671;89;OG015F VAV-R-5;Actual Air Flow OG015F
+4362;228062;57;7;OG0447 ODK 0.031;Actual Air Flow OG0447
+4375;228488;1788;238;OG0442 VAV5 bg;Actual Air Flow OG0442
+4404;229148;2195;292;OG0415 VAV1 1e verd;Actual Air Flow OG0415
+4416;229428;2003;267;OG018E VAV-R-7;Actual Air Flow OG018E
+4419;229529;3642;485;OG0478 VAV8 1e verd;Actual Air Flow OG0478
+4633;238947;670;89;OG0443 VAV4 atrium;Actual Air Flow OG0443
+4693;244725;237;31;OG12B7 ODK 0.067;Actual Air Flow OG12B7
+4697;244974;97;13;OG1277 ODK 0.075;Actual Air Flow OG1277
+4701;245106;60;8;OG1279 ODK 0.081;Actual Air Flow OG1279
+4720;246314;0;0;OG1291 0.087;Actual Air Flow OG1291
+4723;246528;0;0;OG1294 0.087;Actual Air Flow OG1294
+4726;246742;0;0;OG129B 0.087;Actual Air Flow OG129B
+4729;246956;0;0;OG1227 0.087;Actual Air Flow OG1227
+4731;247026;0;0;OG125F 0.087;Actual Air Flow OG125F
+4763;248465;158;21;OG1231 0.052;Actual Air Flow OG1231
+4768;248745;132;17;OG1233 0.052;Actual Air Flow OG1233
+4773;249021;46;6;OG11F6 0.067;Actual Air Flow OG11F6
+4793;252231;0;0;OG0187 ODK 1.103;Actual Air Flow OG0187
+4800;252695;0;0;OG0170 ODK 1.101;Actual Air Flow OG0170
+4805;252980;25;3;OG043D ODK 1.119;Actual Air Flow OG043D
+4810;253237;32;4;OG045D ODK 1.062;Actual Air Flow OG045D
+4817;253622;1487;198;OG047B VAV-R-3;Actual Air Flow OG047B
+4820;253747;2251;300;OG124C VAV6 (Rest) 1e verd;Actual Air Flow OG124C
+4851;256306;0;0;OG128B 0.087;Actual Air Flow OG128B
+4855;256442;52;6;OG120F 0.081;Actual Air Flow OG120F
+4859;256578;0;0;OG12C6 0.087;Actual Air Flow OG12C6
+4862;256675;51;6;OG11FE 0.081;Actual Air Flow OG11FE
+4867;256955;259;34;OG0424 ODK 0.097;Actual Air Flow OG0424
+4872;257341;15;2;OG0185 ODK 0.035;Actual Air Flow OG0185
+4877;257741;725;96;OG12AF VAV10 bg;Actual Air Flow OG12AF
+4904;258920;1174;156;OG0179 R-Kelder;Actual Air Flow OG0179
+5072;270921;38;5;OG1288 0.073;Actual Air Flow OG1288
+5078;271232;52;7;OG11EE 0.075;Actual Air Flow OG11EE
+5084;271539;56;7;OG11FA 0.067;Actual Air Flow OG11FA
+5086;271609;0;0;OG11FC 0.075;Actual Air Flow OG11FC
+5091;271776;141;18;OG11F0 0.052;Actual Air Flow OG11F0
+5094;271877;96;12;OG11F9 0.073;Actual Air Flow OG11F9
+5104;272199;93;12;OG12BA ODK 0.073;Actual Air Flow OG12BA
+5114;272544;1285;171;OG0446 CAV-R-5a;Actual Air Flow OG0446
+5117;272649;0;0;OG018B CAV-R-4;Actual Air Flow OG018B
+5118;272684;225;30;OG12B1 CAV-R-5b;Actual Air Flow OG12B1
+5224;597334;368;49;0.014 (B3.03a) Praktijkruimte;MeasAirflow 0.014 (B3.03a) Praktijkruimte
+5249;285540;1418;189;OG0454 VAV-R-2;Actual Air Flow OG0454
+5312;287836;183;24;OG1235 0.052;Actual Air Flow OG1235
+5318;289594;63;8;OG125D ODK 0.051;Actual Air Flow OG125D
+5328;290096;982;131;OG11F7 ODK 0.052;Actual Air Flow OG11F7
+5343;597487;1975;263;0.136 (C03) Zaal;MeasAirflow 0.136 (C03) Zaal
+5344;597640;2484;331;0.126 (C04) Zaal groot;MeasAirflow 0.126 (C04) Zaal groot
+5365;291941;39;5;OG1290 0.087;Actual Air Flow OG1290
+5480;332774;64;8;0.051 (A1.04a) Praktijkruimte;MeasAirflow 0.051 (A1.04a) Praktijkruimte
+5487;362542;;;0.106 (F01) Toilet dames Begane grond Zuid;MeasAirflow F01 Toilet dames Begane grond Zuid
+5622;327752;126;16;OG122A ODK 0.109;Actual Air Flow OG122A
+5624;327822;139;18;OG1230 0.109;Actual Air Flow OG1230
+5635;328318;118;15;OG11FF VAV-R Keuken Nova;Actual Air Flow OG11FF
+5636;328355;1238;165;OG124E VAV6 Societeit;Actual Air Flow OG124E
+5684;330616;21;2;OG122D ODK 2.109;ActualAirFlow OG122D
+5687;330723;733;97;OG0451 VAV-R-4;ActualAirFlow OG0451
+5702;333453;2141;285;OG017F VAV-R-8;ActualAirFlow OG017F
+5705;333562;2122;282;OG0419 VAV9 bg;ActualAirFlow OG0419
+5723;334723;752;100;OG1271 VAV keuken NOVA;ActualAirFlow OG1271
+5873;347939;17;2;OG1252 ODK 0.118;ActualAirFlow OG1252
+5877;348224;128;17;OG1232 VAV-R-13;ActualAirFlow OG1232
+5879;348410;22;3;OG012F ODK 0.112;ActualAirFlow OG012F
+5886;348871;13;1;OG1275 ODK 0.114;ActualAirFlow OG1275
+5897;353764;330;44;OG1276 VAV14 bg;ActualAirFlow OG1276
+5898;353787;;;OG126D;ActualAirFlow OG126D
+5914;350266;0;0;OG1295 VAV Opslag/klus NOVA;ActualAirFlow OG1295
+6029;354596;23;3;OG122E ODK 1.118;ActualAirFlow OG122E
+6030;354634;33;4;OG11C2 ODK 1.035;ActualAirFlow OG11C2
+6031;354672;0;0;OG1249 0.122;ActualAirFlow OG1249
+6963;466464;136;18;OG1226 ODK 0.087;ActualAirFlow OG1226
+7061;470074;109;14;OG1254;ActualAirFlow OG1254
+7185;598120;202;26;1.055 (A2.04c) ruimte;MeasAirflow 1.055 PCB ruimte
+7320;482953;0;0;OG123F;ActualAirFlow OG123F
+7326;483052;0;0;OG1225;ActualAirFlow OG1225
+7583;506760;56;7;OG124A;ActualAirFlow OG124A
+7898;526315;136;18;OG1264 1.116;ActualAirFlow OG1264
+7902;526713;898;119;OG12B0 2.138;ActualAirFlow OG12B0
+7904;526795;838;111;OG126C 2.138;ActualAirFlow OG126C
+7926;598993;;;0.089 Praktijkruimte;MeasAirflow 0.089 Praktijkruimte
+8230;608406;1297;172;1.013 [A2.04b] Praktijkruimte;MeasAirflow 1.013 [A2.04b] Praktijkruimte
+8268;610715;251;33;1.051 (A2.04c) Ruimte;MeasAirflow 1.051 (A2.04c) Ruimte
