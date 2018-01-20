@@ -157,7 +157,7 @@ Ons project is opgedeeld in drie groepen; Deep Learning, Rule-based systems en B
 	   QString delim = headerRow.at(delimPos);
 	   ```
 	* De oplossing is getest in [dit Qt project](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten/ImportCSV_Test)
-  * [ ] Oude database data gebruiken
+  * [x] Oude database data gebruiken
     * Op dit moment is er geen connectie met een database, voor het automatiseren en voor gebruiksgemak is een connectie wel nodig.
 	* [x] Überhaupt connectie
 	  * Voor de connectie met de oude database moest het een en ander verplaatst worden van de SAW applicatie (waar al connectie gemaakt kan worden) naar de Smile app. 
@@ -179,7 +179,7 @@ Ons project is opgedeeld in drie groepen; Deep Learning, Rule-based systems en B
 	  * De eerste wordt gedaan in de functie `void windowConnectDatabase::on_pushExportCSV_clicked()` van [windowconnectdatabase.cpp](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/windowconnectdatabase.cpp#L406)
 	  * Om de rule waardes te kunnen exporteren wordt een [pop-up venster geopend nadat de database data is geanalyseerd](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/mainwindow.cpp#L451) (tot en met regel 464)
 	  * De laatste export optie is het [exporteren van het resultaat](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/mainwindow.cpp#L1363).
-	* [ ] Data gebruiken in de smileApp (data analyseren)
+	* [x] Data gebruiken in de smileApp (data analyseren)
 	  * Op dit moment kan analyseren helaas alleen voor lokalen met een maximum airflow van 80 m/s, omdat de waarde van een hoge airflow nog niet bepaald is voor de andere lokalen. Maar hier is alsnog hoe te werk wordt gegaan.  
 	  
 	    De data uit de database moet worden geconverteerd naar ‘rule values’ zodat het gebruikt kan worden voor analyse met het BBN model (Ventilation4). Daarom is de functie [convertDataDabase()](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/datacenter/convertdata.cpp#L452) aangemaakt. Het nadeel van deze functie is dat het alleen werkt met het [huidige BBN model](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/master/Project/Ventilation4.xdsl).  
@@ -193,13 +193,15 @@ Ons project is opgedeeld in drie groepen; Deep Learning, Rule-based systems en B
 		Als eerst wordt er ruimte gereserveerd voor de nieuwe data:  
 		`std::vector< std::vector<float> > ruleData(newColumn[0].size(), std::vector<float>(data.size()));`  
 		Deze is negen bij X, waar X het aantal datapunten is van de te converteren data. Er wordt van te voren geheugen gealloceerd zodat in de code erna, een waarde op een “willekeurige” plek kan worden toegekend.
-		Daarna moeten een viertal grenswaardes worden gedefinieerd:  
+		Daarna moeten een viertal limieten worden gedefinieerd, Dit zijn een paar voorbeelden van vier vorige grenswaardes:  
 		* Lage CO2	= 418
 		* Hoge CO2	= 630
 		* Lage airflow	= 7
 		* Hoge airflow 	= 70  
 		
-		De waardes zijn bepaald door middel van de 25e percentiel en 75e percentiel op de dataset van 2.008: 2014-2015 (per uur).  
+		De waardes zijn bepaald door middel van de 25e percentiel en 75e percentiel op de dataset van 2.008: 2014-2015 (per uur).
+		De hoge en lage CO2 blijven hetzelfde voor elk lokaal, maar de airflow grenzen niet. Verschillende lokalen hebben namelijk verschillende maximale airflow. Op dit moment wordt de hoge airflow bepaalt door 75%, en de lage airflow door 10% te nemen van de maximale airflow. Voordat dit gedaan wordt, wordt data tussen 7 en 23 uur genomen omdat hiertussen het gebouw ‘actief’ is. De uitkomsten staan in een csv ([highAirflowData](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/highAirflowData.csv)) in de map [‘smileLab’](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten/smileApp/release/smileLab).  
+
 		Daarna moeten de kolommen van CO2, airflow en de PIR sensor achterhaald worden. Dit gebeurd in de functie [getColPos()](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/blob/4870eb8a3fd4456e16648a4770b5675fa98d7e44/Project/Qt%20projecten/smileApp/datacenter/convertdata.cpp#L731), deze neemt als argumenten een vector van QStrings en drie references naar variabelen. In de functie wordt gezocht naar kolomnamen die of “CO2, of “Air”, of “PIR” bevatten. De positie wordt dan opgeslagen in de relevante meegegeven reference. Als alle drie de kolommen zijn gevonden, wordt `True` gereturned. Daarna worden de drie variabelen met twee verlaagt, omdat de kolommen "Datum" en "Tijd" worden gestript van de "echte" data maar niet van de headerData.  
 		Mocht een kolom niet gevonden worden, dan wordt `False` gereturned. De return waarde wordt opgevangen in een if statement die een warning genereert als `False` is gereturned door de vorige functie, en zal daarna een lege vector terugsturen. 
 
@@ -214,6 +216,7 @@ Ons project is opgedeeld in drie groepen; Deep Learning, Rule-based systems en B
     * [ ] Connectie
 	* [ ] Data exporteren
 	* [ ] Data gebruiken in smile (data analyseren)
+  * [ ] Beter ontwerp maken (klassen relaties e.d.)
   * [ ] Error afhandeling
     * Tot nu toe moeten veel handelingen stapsgewijs gebeuren en kunnen ze niet zonder de output van de vorige stap.  
 	
@@ -225,6 +228,8 @@ Ons project is opgedeeld in drie groepen; Deep Learning, Rule-based systems en B
 	
 Overige werkzaamheden
 * [x] In Excel [data per kwartier overhouden ipv per 5 minuten](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/KwartierOverhouden.bas)
+* [x] Op de JupyterHub [alle airflow data ophalen en voorverwerken](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Justin_BepaalAirflowGrenzen.md) (hierdoor worden ~ 131 miljoen regels aan data, "maar" ~ 8 miljoen) & [hoge en lage airflow vaststellen](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Justin_SchoonAirflowData.md)
+  * Dit is toegepast in het [testproject](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten/flexibeleHighAirflow_Test) dat geschreven is in C++
   
 ---
   
