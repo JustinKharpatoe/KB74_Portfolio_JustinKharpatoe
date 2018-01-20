@@ -216,7 +216,8 @@ Ons project is opgedeeld in drie groepen; Deep Learning, Rule-based systems en B
     * [ ] Connectie
 	* [ ] Data exporteren
 	* [ ] Data gebruiken in smile (data analyseren)
-  * [ ] Beter ontwerp maken (klassen relaties e.d.)
+  * [ ] Beter ontwerp maken (klassen relaties e.d.)  
+    * Het ontwerp voldoet nu aan geen een ontwerp patroon, voor uitbreidbaarheid is dit eigenlijk wel nodig.
   * [ ] Error afhandeling
     * Tot nu toe moeten veel handelingen stapsgewijs gebeuren en kunnen ze niet zonder de output van de vorige stap.  
 	
