@@ -228,7 +228,7 @@ Ons project is opgedeeld in drie groepen; Deep Learning, Rule-based systems en B
 	
 Overige werkzaamheden
 * [x] In Excel [data per kwartier overhouden ipv per 5 minuten](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/KwartierOverhouden.bas)
-* [x] Op de JupyterHub [alle airflow data ophalen en voorverwerken](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Justin_BepaalAirflowGrenzen.md) (hierdoor worden ~ 131 miljoen regels aan data, "maar" ~ 8 miljoen) & [hoge en lage airflow vaststellen](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Justin_SchoonAirflowData.md)
+* [x] Op de JupyterHub [alle airflow data ophalen en voorverwerken](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Justin_SchoonAirflowData.md) (hierdoor worden ~ 131 miljoen regels aan data, "maar" ~ 8 miljoen) & [hoge en lage airflow vaststellen](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Justin_BepaalAirflowGrenzen.md)
   * Dit is toegepast in het [testproject](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten/flexibeleHighAirflow_Test) dat geschreven is in C++
   
 ---
