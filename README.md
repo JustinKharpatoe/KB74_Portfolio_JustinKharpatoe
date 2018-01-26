@@ -8,9 +8,7 @@ De portfolio van Justin Kharpatoe voor de minor KB74 (Applied Data Science)
 * 4\. [Spark tutorials](#Spark_tutorials)
 * 5\. [Presentaties](#Presentaties)  
 * 6\. [Uitgevoerde taken voor het project](#Taken_project)  
-* 7\. [Opdrachten van de workshops](#Opdrachten_workshops)  
-    * 7.1 [Bullshit in Data Science](#Bullshit)  
-    * 7.2 [Visualisatie](#Visualisatie)  
+* 7\. [Bullshit in Data Science](#Bullshit)  
   
 ---	
   
@@ -214,18 +212,30 @@ Ons project is opgedeeld in drie groepen; Deep Learning, Rule-based systems en B
 	  * Bovenstaande code is getest in [dit Qt project](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Qt%20projecten/RawToRule_Test)
   * [ ] Nieuwe database data gebruiken
     * [ ] Connectie
-	* [ ] Data exporteren
-	* [ ] Data gebruiken in smile (data analyseren)
+    * [ ] Data exporteren
+    * [ ] Data gebruiken in smile (data analyseren)
   * [ ] Beter ontwerp maken (klassen relaties e.d.)  
     * Het ontwerp voldoet nu aan geen een ontwerp patroon, voor uitbreidbaarheid is dit eigenlijk wel nodig.
-  * [ ] Error afhandeling
+  * [ ] Error afhandeling  
     * Tot nu toe moeten veel handelingen stapsgewijs gebeuren en kunnen ze niet zonder de output van de vorige stap.  
-	
-	   Door bijvoorbeeld checks te gebruiken hoeft de smileApp niet persé te crashen.
+    
+      Door bijvoorbeeld checks te gebruiken hoeft de smileApp niet persé te crashen.
   * [ ] Automatiseren
     * Het liefst wil de gebouwbeheerder meldingen ontvangen zonder er wat voor te doen, dat wordt (ongeveer) met automatiseren bedoeld.
   * [ ] Resultaten <mooi> weergeven
     * De resultaten worden nu nog in een (lelijke) tabel gegooid, voor snellere analyse (door bijvoorbeeld de gebouwbeheerder) is het noodzakelijk om de defecten eruit te laten springen.
+	
+Het [onderzoeksverslag](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Onderzoeksverslag_Smartbuilding_2.1.pdf)  
+* [x] Samenvatting (samen met Bob Tuynman)  
+* [x] 1 Inleiding (samen met Bob Tuynman)    
+* [x] 2 Theoretisch kader: 2.5 Het BBN model  
+* [x] 3 Methoden: 3.2 Bayesian Belief Network  
+* [x] 4 Resultaten: 4.2.1 Analyse in een C++ applicatie  
+* [x] 5 Conclusies: Alle tekst wat te maken heeft met de analyse in een C++ applicatie  
+  
+De [paper](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/Paper_SmartBuilding.pdf)  
+* [x] 4 Bayesian Belief Networks
+* [x] 7 Results: BBN 'smileApp' gedeelte
 	
 Overige werkzaamheden
 * [x] In Excel [data per kwartier overhouden ipv per 5 minuten](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Project/KwartierOverhouden.bas)
@@ -234,10 +244,7 @@ Overige werkzaamheden
   
 ---
   
-## 7 Opdrachten van de workshops <a name="Opdrachten_workshops"></a>
-n.n.b  
-
-### 7.1 Bullshit in Data Science <a name="Bullshit"></a>
+## 7 Bullshit in Data Science <a name="Bullshit"></a>  
 In het document [Bullshit_in_Data_Science.docx](https://github.com/JustinKharpatoe/KB74_Portfolio_JustinKharpatoe/tree/master/Bullshit%20in%20Data%20Science/Bullshit_in_Data_Science.docx?raw=true) is het volgende te vinden:  
 * In de eerste opdracht wordt per categorie (nieuws, wetenschappelijk artikellen, overige artikellen/tweets etc., video's & grafieken) twee gevonden voorbeelden van bullshit uitgewerkt.
 * Voor opdracht twee moet je zelf geproduceerde bullshit opschrijven (min. vijf voorbeelden).
@@ -245,7 +252,5 @@ In het document [Bullshit_in_Data_Science.docx](https://github.com/JustinKharpat
   * Waarom is het bullshit?
   * Hoe is de bullshit ontstaan?
   * Wat voor consequenties heeft of kan het verspreiden van deze bullshit hebben?
-* Bij opdracht vier moet je aangeven wat je tegen het voorbeeld van opdracht 3 kan doen of hebt gedaan.
-
-### 7.2 Visualisatie <a name="Visualisatie"></a>
-n.n.b    
+* Bij opdracht vier moet je aangeven wat je tegen het voorbeeld van opdracht 3 kan doen of hebt gedaan.  
+  
